@@ -1,0 +1,2 @@
+com.jsmauto.wms.framework.security.config.SecurityAutoConfiguration
+com.jsmauto.wms.framework.operatelog.config.OperateLogConfiguration

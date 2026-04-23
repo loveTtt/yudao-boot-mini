@@ -1,0 +1,4 @@
+com.jsmauto.wms.framework.idempotent.config.IdempotentConfiguration
+com.jsmauto.wms.framework.lock4j.config.Lock4jConfiguration
+com.jsmauto.wms.framework.ratelimiter.config.RateLimiterConfiguration
+com.jsmauto.wms.framework.signature.config.ApiSignatureAutoConfiguration

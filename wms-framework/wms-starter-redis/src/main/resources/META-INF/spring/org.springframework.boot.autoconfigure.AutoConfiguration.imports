@@ -1,0 +1,2 @@
+com.jsmauto.wms.framework.redis.config.RedisAutoConfiguration
+com.jsmauto.wms.framework.redis.config.CacheAutoConfiguration

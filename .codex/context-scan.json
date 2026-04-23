@@ -1,0 +1,30 @@
+{
+  "date": "2026-04-23",
+  "executor": "Codex",
+  "task": "排查 authController 启动时的 Bean 注入失败",
+  "location": [
+    "wms-module-system/src/main/java/com/jsmauto/wms/module/system/controller/admin/auth/AuthController.java",
+    "wms-module-system/src/main/java/com/jsmauto/wms/module/system/service/auth/AdminAuthServiceImpl.java",
+    "wms-module-system/src/main/resources/META-INF/services/com.anji.captcha.service.CaptchaCacheService",
+    "wms-module-system/src/main/resources/META-INF/services/com.anji.captcha.service.CaptchaService"
+  ],
+  "current_state": {
+    "error_chain": "authController -> adminAuthServiceImpl -> captchaService",
+    "actual_root_cause": "META-INF/services 下两个验证码 SPI 注册文件包含 UTF-8 BOM，导致 ServiceLoader 读取到非法 provider-class 名称"
+  },
+  "tech_stack": {
+    "language": "Java 17",
+    "framework": "Spring Boot 3.5.9",
+    "build": "Maven 多模块",
+    "component": "aj-captcha ServiceLoader SPI"
+  },
+  "tests": {
+    "existing": "项目原先没有覆盖该 SPI 资源文件的测试",
+    "added": "CaptchaSpiResourceTest，校验资源文件无 BOM 且类名正确"
+  },
+  "observations": [
+    "用户提供的顶层 BeanCreationException 不足以定位根因，必须继续追到底层 ServiceConfigurationError",
+    "验证码功能即使在 local 配置中关闭，CaptchaService Bean 仍会在启动时创建，因此 SPI 文件异常会直接阻塞启动",
+    "完整启动复验时，发现 wms-starter-biz-tenant 的 TenantAutoConfiguration.java 已经是损坏的二进制内容，这属于独立问题"
+  ]
+}

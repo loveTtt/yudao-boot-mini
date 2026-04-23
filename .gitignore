@@ -1,4 +1,4 @@
-######################################################################
+﻿######################################################################
 # Build Tools
 
 .gradle
@@ -50,5 +50,5 @@ rebel.xml
 
 application-my.yaml
 
-/yudao-ui-app/unpackage/
+/wms-ui-app/unpackage/
 **/.DS_Store

@@ -1,0 +1,7 @@
+com.jsmauto.wms.framework.apilog.config.ApiLogAutoConfiguration
+com.jsmauto.wms.framework.jackson.config.JacksonAutoConfiguration
+com.jsmauto.wms.framework.swagger.config.SwaggerAutoConfiguration
+com.jsmauto.wms.framework.web.config.WebAutoConfiguration
+com.jsmauto.wms.framework.xss.config.XssAutoConfiguration
+com.jsmauto.wms.framework.banner.config.BannerAutoConfiguration
+com.jsmauto.wms.framework.encrypt.config.ApiEncryptAutoConfiguration

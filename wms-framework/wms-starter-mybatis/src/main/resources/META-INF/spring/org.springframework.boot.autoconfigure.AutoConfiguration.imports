@@ -1,0 +1,3 @@
+com.jsmauto.wms.framework.datasource.config.DataSourceAutoConfiguration
+com.jsmauto.wms.framework.mybatis.config.MybatisAutoConfiguration
+com.jsmauto.wms.framework.translate.config.TranslateAutoConfiguration

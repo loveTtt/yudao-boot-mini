@@ -1,0 +1,2 @@
+com.jsmauto.wms.framework.tracer.config.TracerAutoConfiguration
+com.jsmauto.wms.framework.tracer.config.MetricsAutoConfiguration
