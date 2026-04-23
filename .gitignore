@@ -51,4 +51,11 @@ rebel.xml
 application-my.yaml
 
 /wms-ui-app/unpackage/
+/wms-ui/**/node_modules/
+/wms-ui/**/.vite/
+/wms-ui/**/dist/
+/wms-ui/**/dist-ssr/
+/wms-ui/**/auto-*.d.ts
+/wms-ui/**/.env
+/wms-ui/**/.env.*
 **/.DS_Store
