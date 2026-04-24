@@ -13,7 +13,7 @@ const appStore = useAppStore()
 
 const show = ref(true)
 
-const title = computed(() => appStore.getTitle)
+const title = computed(() => appStore.getTitle.replace(/^捷圣\s*/, ''))
 
 const layout = computed(() => appStore.getLayout)
 
@@ -67,13 +67,13 @@ watch(
       to="/"
     >
       <img
-        class="h-[calc(var(--logo-height)-10px)] w-[calc(var(--logo-height)-10px)]"
+        class="h-[calc(var(--logo-height)-20px)] w-92px object-contain"
         src="@/assets/imgs/logo.png"
       />
       <div
         v-if="show"
         :class="[
-          'ml-10px text-16px font-700',
+          'ml-8px text-17px font-700 tracking-1px',
           {
             'text-[var(--logo-title-text-color)]': layout === 'classic',
             'text-[var(--top-header-text-color)]':

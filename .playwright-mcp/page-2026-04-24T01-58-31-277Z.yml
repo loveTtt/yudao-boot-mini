@@ -1,0 +1,50 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e16]: 捷圣WMS管理系统
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - switch
+          - img [ref=e24] [cursor=pointer]
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e30]
+    - generic [ref=e34]:
+      - heading "登录" [level=2] [ref=e38]
+      - generic [ref=e43]:
+        - img [ref=e48]
+        - textbox "请输入租户名称" [ref=e50]: jsmauto
+      - generic [ref=e55]:
+        - img [ref=e60]
+        - textbox "请输入用户名" [ref=e62]: admin
+      - generic [ref=e67]:
+        - img [ref=e72]
+        - textbox "请输入密码" [ref=e75]: admin123
+        - img [ref=e78] [cursor=pointer]
+      - generic [ref=e84]:
+        - generic [ref=e86] [cursor=pointer]:
+          - generic [ref=e87]:
+            - checkbox "记住我" [checked]
+          - generic [ref=e89]: 记住我
+        - generic [ref=e92] [cursor=pointer]: 忘记密码?
+      - generic [ref=e95]:
+        - button "登录" [disabled]:
+          - generic:
+            - img
+          - generic: 登录
+      - generic [ref=e101]:
+        - button "手机登录" [ref=e103] [cursor=pointer]:
+          - generic [ref=e104]: 手机登录
+        - button "二维码登录" [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: 二维码登录
+        - button "注册" [ref=e109] [cursor=pointer]:
+          - generic [ref=e110]: 注册
+      - separator [ref=e111]:
+        - generic [ref=e112]: 其他登录方式
+      - generic [ref=e116]:
+        - img [ref=e119] [cursor=pointer]
+        - img [ref=e123] [cursor=pointer]
+        - img [ref=e127] [cursor=pointer]
+        - img [ref=e131] [cursor=pointer]
+  - generic [ref=e134]:
+    - img [ref=e135]
+    - paragraph [ref=e137]: 正在加载系统中...

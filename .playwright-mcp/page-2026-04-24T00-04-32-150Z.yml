@@ -1,0 +1,58 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e8]: 芋道管理系统
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - switch
+        - img [ref=e16] [cursor=pointer]
+      - button [ref=e20] [cursor=pointer]:
+        - img [ref=e22]
+  - generic [ref=e26]:
+    - heading "登录" [level=2] [ref=e30]
+    - generic [ref=e35]:
+      - img [ref=e40]
+      - textbox "请输入租户名称" [ref=e42]: jsmauto
+    - generic [ref=e47]:
+      - img [ref=e52]
+      - textbox "请输入用户名" [ref=e54]: admin
+    - generic [ref=e59]:
+      - img [ref=e64]
+      - textbox "请输入密码" [ref=e67]: admin123
+      - img [ref=e70] [cursor=pointer]
+    - generic [ref=e76]:
+      - generic [ref=e78] [cursor=pointer]:
+        - generic [ref=e79]:
+          - checkbox "记住我" [checked]
+        - generic [ref=e81]: 记住我
+      - generic [ref=e84] [cursor=pointer]: 忘记密码?
+    - button "登录" [ref=e88] [cursor=pointer]:
+      - generic [ref=e89]: 登录
+    - generic [ref=e93]:
+      - button "手机登录" [ref=e95] [cursor=pointer]:
+        - generic [ref=e96]: 手机登录
+      - button "二维码登录" [ref=e98] [cursor=pointer]:
+        - generic [ref=e99]: 二维码登录
+      - button "注册" [ref=e101] [cursor=pointer]:
+        - generic [ref=e102]: 注册
+    - separator [ref=e103]:
+      - generic [ref=e104]: 其他登录方式
+    - generic [ref=e108]:
+      - img [ref=e111] [cursor=pointer]
+      - img [ref=e115] [cursor=pointer]
+      - img [ref=e119] [cursor=pointer]
+      - img [ref=e123] [cursor=pointer]
+    - separator [ref=e125]:
+      - generic [ref=e126]: 萌新必读
+    - generic [ref=e130]:
+      - link "📚开发指南" [ref=e131] [cursor=pointer]:
+        - /url: https://doc.iocoder.cn/
+        - generic [ref=e132]: 📚开发指南
+      - link "🔥视频教程" [ref=e133] [cursor=pointer]:
+        - /url: https://doc.iocoder.cn/video/
+        - generic [ref=e134]: 🔥视频教程
+      - link "⚡面试手册" [ref=e135] [cursor=pointer]:
+        - /url: https://www.iocoder.cn/Interview/good-collection/
+        - generic [ref=e136]: ⚡面试手册
+      - link "🤝外包咨询" [ref=e137] [cursor=pointer]:
+        - /url: http://static.yudao.iocoder.cn/mp/Aix9975.jpeg
+        - generic [ref=e138]: 🤝外包咨询

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull *)",
+      "Bash(git push *)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_network_requests",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_evaluate"
+    ]
+  }
+}

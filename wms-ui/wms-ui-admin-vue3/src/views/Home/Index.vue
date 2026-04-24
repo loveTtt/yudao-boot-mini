@@ -1,422 +1,262 @@
-﻿<template>
-  <div>
-    <el-card shadow="never">
-      <el-skeleton :loading="loading" animated>
-        <el-row :gutter="16" justify="space-between">
-          <el-col :xl="12" :lg="12" :md="12" :sm="24" :xs="24">
-            <div class="flex items-center">
-              <el-avatar :src="avatar" :size="70" class="mr-16px">
-                <img src="@/assets/imgs/avatar.gif" alt="" />
-              </el-avatar>
-              <div>
-                <div class="text-20px">
-                  {{ t('workplace.welcome') }} {{ username }} {{ t('workplace.happyDay') }}
-                </div>
-                <div class="mt-10px text-14px text-gray-500">
-                  {{ t('workplace.toady') }}，20℃ - 32℃！
-                </div>
-              </div>
-            </div>
-          </el-col>
-          <el-col :xl="12" :lg="12" :md="12" :sm="24" :xs="24">
-            <div class="h-70px flex items-center justify-end lt-sm:mt-10px">
-              <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.project') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.project"
-                  :duration="2600"
-                />
-              </div>
-              <el-divider direction="vertical" />
-              <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.toDo') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.todo"
-                  :duration="2600"
-                />
-              </div>
-              <el-divider direction="vertical" border-style="dashed" />
-              <div class="px-8px text-right">
-                <div class="mb-16px text-14px text-gray-400">{{ t('workplace.access') }}</div>
-                <CountTo
-                  class="text-20px"
-                  :start-val="0"
-                  :end-val="totalSate.access"
-                  :duration="2600"
-                />
-              </div>
-            </div>
-          </el-col>
-        </el-row>
-      </el-skeleton>
-    </el-card>
-  </div>
+<template>
+  <div class="wms-home">
+    <ContentWrap :body-style="{ padding: '24px' }">
+      <div class="flex flex-wrap items-center justify-between gap-16px">
+        <div>
+          <h2 class="flex items-center m-0 mb-8px text-26px font-600 text-[#303133]">
+            <Icon icon="ep:box" class="mr-12px text-[#409eff]" />
+            捷圣 WMS 仓储工作台
+          </h2>
+          <p class="m-0 text-[#606266] text-14px">
+            聚焦入库、出库、库存、库位与异常作业，帮助仓库现场快速掌握当日运行状态。
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-10px">
+          <el-tag effect="dark" type="success">系统运行正常</el-tag>
+          <el-tag type="info">今日班次：早班</el-tag>
+        </div>
+      </div>
+    </ContentWrap>
 
-  <el-row class="mt-8px" :gutter="8" justify="space-between">
-    <el-col :xl="16" :lg="16" :md="24" :sm="24" :xs="24" class="mb-8px">
-      <el-card shadow="never">
-        <template #header>
-          <div class="h-3 flex justify-between">
-            <span>{{ t('workplace.project') }}</span>
-            <el-link
-              type="primary"
-              :underline="false"
-              href="https://github.com/yudaocode"
-              target="_blank"
+    <el-row :gutter="16" class="mb-16px">
+      <el-col v-for="item in overviewCards" :key="item.label" :lg="6" :md="12" :sm="12" :xs="24">
+        <el-card class="mb-16px transition-all duration-300 hover:-translate-y-2px" shadow="hover">
+          <div class="flex items-center">
+            <div
+              class="w-52px h-52px rounded-10px flex items-center justify-center text-26px text-white mr-16px"
+              :class="item.bg"
             >
-              {{ t('action.more') }}
-            </el-link>
+              <Icon :icon="item.icon" />
+            </div>
+            <div class="flex-1">
+              <div class="text-26px font-600 text-[#303133] leading-none">{{ item.value }}</div>
+              <div class="text-14px text-[#909399] mt-6px">{{ item.label }}</div>
+              <div class="text-12px text-[#67c23a] mt-8px">{{ item.trend }}</div>
+            </div>
           </div>
-        </template>
-        <el-skeleton :loading="loading" animated>
-          <el-row>
-            <el-col
-              v-for="(item, index) in projects"
-              :key="`card-${index}`"
-              :xl="8"
-              :lg="8"
-              :md="8"
-              :sm="24"
-              :xs="24"
-            >
-              <el-card
-                shadow="hover"
-                class="mr-5px mt-5px cursor-pointer"
-                @click="handleProjectClick(item.message)"
-              >
-                <div class="flex items-center">
-                  <Icon
-                    :icon="item.icon"
-                    :size="25"
-                    class="mr-8px"
-                    :style="{ color: item.color }"
-                  />
-                  <span class="text-16px">{{ item.name }}</span>
+        </el-card>
+      </el-col>
+    </el-row>
+
+    <el-row :gutter="16">
+      <el-col :lg="16" :md="24" :xs="24">
+        <ContentWrap title="作业看板" :body-style="{ padding: '18px' }">
+          <el-row :gutter="14">
+            <el-col v-for="task in operationTasks" :key="task.name" :md="6" :sm="12" :xs="24">
+              <div class="task-card mb-14px">
+                <div class="flex items-center justify-between mb-12px">
+                  <span class="text-15px font-500 text-[#303133]">{{ task.name }}</span>
+                  <el-tag :type="task.type" size="small">{{ task.status }}</el-tag>
                 </div>
-                <div class="mt-12px text-12px text-gray-400">{{ t(item.message) }}</div>
-                <div class="mt-12px flex justify-between text-12px text-gray-400">
-                  <span>{{ item.personal }}</span>
-                  <span>{{ formatTime(item.time, 'yyyy-MM-dd') }}</span>
-                </div>
-              </el-card>
+                <div class="text-28px font-600 text-[#303133] mb-10px">{{ task.count }}</div>
+                <el-progress :percentage="task.percent" :stroke-width="8" />
+              </div>
             </el-col>
           </el-row>
-        </el-skeleton>
-      </el-card>
+        </ContentWrap>
 
-      <el-card shadow="never" class="mt-8px">
-        <el-skeleton :loading="loading" animated>
-          <el-row :gutter="20" justify="space-between">
-            <el-col :xl="10" :lg="10" :md="24" :sm="24" :xs="24">
-              <el-card shadow="hover" class="mb-8px">
-                <el-skeleton :loading="loading" animated>
-                  <Echart :options="pieOptionsData" :height="280" />
-                </el-skeleton>
-              </el-card>
-            </el-col>
-            <el-col :xl="14" :lg="14" :md="24" :sm="24" :xs="24">
-              <el-card shadow="hover" class="mb-8px">
-                <el-skeleton :loading="loading" animated>
-                  <Echart :options="barOptionsData" :height="280" />
-                </el-skeleton>
-              </el-card>
-            </el-col>
-          </el-row>
-        </el-skeleton>
-      </el-card>
-    </el-col>
-    <el-col :xl="8" :lg="8" :md="24" :sm="24" :xs="24" class="mb-8px">
-      <el-card shadow="never">
-        <template #header>
-          <div class="h-3 flex justify-between">
-            <span>{{ t('workplace.shortcutOperation') }}</span>
-          </div>
-        </template>
-        <el-skeleton :loading="loading" animated>
-          <el-row>
-            <el-col v-for="item in shortcut" :key="`team-${item.name}`" :span="8" class="mb-8px">
+        <ContentWrap title="库区容量" :body-style="{ padding: '18px' }">
+          <div v-for="area in warehouseAreas" :key="area.name" class="mb-18px last:mb-0">
+            <div class="flex items-center justify-between mb-8px">
               <div class="flex items-center">
-                <Icon :icon="item.icon" class="mr-8px" :style="{ color: item.color }" />
-                <el-link type="default" :underline="false" @click="handleShortcutClick(item.url)">
-                  {{ item.name }}
-                </el-link>
+                <Icon icon="ep:office-building" class="mr-8px text-[#409eff]" />
+                <span class="text-14px font-500 text-[#303133]">{{ area.name }}</span>
+              </div>
+              <span class="text-13px text-[#909399]">{{ area.used }} / {{ area.total }} 库位</span>
+            </div>
+            <el-progress :percentage="area.percent" :status="area.status" :stroke-width="10" />
+          </div>
+        </ContentWrap>
+      </el-col>
+
+      <el-col :lg="8" :md="24" :xs="24">
+        <ContentWrap title="库存预警" :body-style="{ padding: '18px' }">
+          <div v-for="warning in inventoryWarnings" :key="warning.title" class="warning-item">
+            <div class="flex items-start">
+              <Icon :icon="warning.icon" class="mt-2px mr-10px" :class="warning.color" />
+              <div class="flex-1">
+                <div class="flex items-center justify-between mb-4px">
+                  <span class="text-14px font-500 text-[#303133]">{{ warning.title }}</span>
+                  <el-tag :type="warning.type" size="small">{{ warning.count }} 条</el-tag>
+                </div>
+                <div class="text-12px text-[#909399]">{{ warning.desc }}</div>
+              </div>
+            </div>
+          </div>
+        </ContentWrap>
+
+        <ContentWrap title="快捷入口" :body-style="{ padding: '18px' }">
+          <el-row :gutter="12">
+            <el-col v-for="entry in quickEntries" :key="entry.name" :span="12">
+              <div class="quick-entry mb-12px">
+                <Icon :icon="entry.icon" class="text-24px mb-8px" :class="entry.color" />
+                <div class="text-14px text-[#303133]">{{ entry.name }}</div>
               </div>
             </el-col>
           </el-row>
-        </el-skeleton>
-      </el-card>
-      <el-card shadow="never" class="mt-8px">
-        <template #header>
-          <div class="h-3 flex justify-between">
-            <span>{{ t('workplace.notice') }}</span>
-            <el-link type="primary" :underline="false">{{ t('action.more') }}</el-link>
-          </div>
-        </template>
-        <el-skeleton :loading="loading" animated>
-          <div v-for="(item, index) in notice" :key="`dynamics-${index}`">
+        </ContentWrap>
+
+        <ContentWrap title="设备状态" :body-style="{ padding: '18px' }">
+          <div
+            v-for="device in deviceStatus"
+            :key="device.name"
+            class="flex items-center justify-between mb-14px last:mb-0"
+          >
             <div class="flex items-center">
-              <el-avatar :src="avatar" :size="35" class="mr-16px">
-                <img src="@/assets/imgs/avatar.gif" alt="" />
-              </el-avatar>
-              <div>
-                <div class="text-14px">
-                  <Highlight :keys="item.keys.map((v) => t(v))">
-                    {{ item.type }} : {{ item.title }}
-                  </Highlight>
-                </div>
-                <div class="mt-16px text-12px text-gray-400">
-                  {{ formatTime(item.date, 'yyyy-MM-dd') }}
-                </div>
-              </div>
+              <span class="status-dot mr-10px" :class="device.dot"></span>
+              <span class="text-14px text-[#303133]">{{ device.name }}</span>
             </div>
-            <el-divider />
+            <el-tag :type="device.type" size="small">{{ device.status }}</el-tag>
           </div>
-        </el-skeleton>
-      </el-card>
-    </el-col>
-  </el-row>
+        </ContentWrap>
+      </el-col>
+    </el-row>
+  </div>
 </template>
+
 <script lang="ts" setup>
-import { set } from 'lodash-es'
-import { EChartsOption } from 'echarts'
-import { formatTime } from '@/utils'
-
-import { useUserStore } from '@/store/modules/user'
-// import { useWatermark } from '@/hooks/web/useWatermark'
-import type { WorkplaceTotal, Project, Notice, Shortcut } from './types'
-import { pieOptions, barOptions } from './echarts-data'
-import { useRouter } from 'vue-router'
-
 defineOptions({ name: 'Index' })
 
-const { t } = useI18n()
-const router = useRouter()
-const userStore = useUserStore()
-// const { setWatermark } = useWatermark()
-const loading = ref(true)
-const avatar = userStore.getUser.avatar
-const username = userStore.getUser.nickname
-const pieOptionsData = reactive<EChartsOption>(pieOptions) as EChartsOption
-// 获取统计数
-let totalSate = reactive<WorkplaceTotal>({
-  project: 0,
-  access: 0,
-  todo: 0
-})
-
-const getCount = async () => {
-  const data = {
-    project: 40,
-    access: 2340,
-    todo: 10
+const overviewCards = [
+  {
+    label: '库存 SKU',
+    value: '12,486',
+    trend: '较昨日 +128',
+    icon: 'ep:goods',
+    bg: 'bg-gradient-to-br from-[#667eea] to-[#764ba2]'
+  },
+  {
+    label: '可用库位',
+    value: '3,216',
+    trend: '可用率 72%',
+    icon: 'ep:grid',
+    bg: 'bg-gradient-to-br from-[#36d1dc] to-[#5b86e5]'
+  },
+  {
+    label: '今日入库',
+    value: '428',
+    trend: '已完成 86%',
+    icon: 'ep:bottom-left',
+    bg: 'bg-gradient-to-br from-[#11998e] to-[#38ef7d]'
+  },
+  {
+    label: '今日出库',
+    value: '516',
+    trend: '准时率 98%',
+    icon: 'ep:top-right',
+    bg: 'bg-gradient-to-br from-[#ff9966] to-[#ff5e62]'
   }
-  totalSate = Object.assign(totalSate, data)
-}
+]
 
-// 获取项目数
-let projects = reactive<Project[]>([])
-const getProject = async () => {
-  const data = [
-    {
-      name: 'ruoyi-vue-pro',
-      icon: 'simple-icons:springboot',
-      message: 'github.com/YunaiV/ruoyi-vue-pro',
-      personal: 'Spring Boot 单体架构',
-      time: new Date('2025-01-02'),
-      color: '#6DB33F'
-    },
-    {
-      name: 'wms-ui-admin-vue3',
-      icon: 'ep:element-plus',
-      message: 'github.com/yudaocode/wms-ui-admin-vue3',
-      personal: 'Vue3 + element-plus 管理后台',
-      time: new Date('2025-02-03'),
-      color: '#409EFF'
-    },
-    {
-      name: 'wms-ui-mall-uniapp',
-      icon: 'icon-park-outline:mall-bag',
-      message: 'github.com/yudaocode/wms-ui-mall-uniapp',
-      personal: 'Vue3 + uniapp 商城手机端',
-      time: new Date('2025-03-04'),
-      color: '#ff4d4f'
-    },
-    {
-      name: 'wms-cloud',
-      icon: 'material-symbols:cloud-outline',
-      message: 'github.com/YunaiV/wms-cloud',
-      personal: 'Spring Cloud 微服务架构',
-      time: new Date('2025-04-05'),
-      color: '#1890ff'
-    },
-    {
-      name: 'wms-ui-admin-vben',
-      icon: 'devicon:antdesign',
-      message: 'github.com/yudaocode/wms-ui-admin-vben',
-      personal: 'Vue3 + vben5(antd) 管理后台',
-      time: new Date('2025-05-06'),
-      color: '#e18525'
-    },
-    {
-      name: 'wms-ui-admin-uniapp',
-      icon: 'ant-design:mobile',
-      message: 'github.com/yudaocode/wms-ui-admin-uniapp',
-      personal: 'Vue3 + uniapp 管理手机端',
-      time: new Date('2025-06-01'),
-      color: '#2979ff'
-    }
-  ]
-  projects = Object.assign(projects, data)
-}
+const operationTasks = [
+  { name: '待上架', count: 36, percent: 68, status: '进行中', type: 'primary' as const },
+  { name: '待拣货', count: 52, percent: 74, status: '高峰', type: 'warning' as const },
+  { name: '待复核', count: 18, percent: 42, status: '正常', type: 'success' as const },
+  { name: '异常任务', count: 7, percent: 18, status: '需处理', type: 'danger' as const }
+]
 
-// 获取通知公告
-let notice = reactive<Notice[]>([])
-const getNotice = async () => {
-  const data = [
-    {
-      title: '系统支持 JDK 8/17/21，Vue 2/3',
-      type: '技术兼容性',
-      keys: ['JDK', 'Vue'],
-      date: new Date()
-    },
-    {
-      title: '后端提供 Spring Boot 2.7/3.2 + Cloud 双架构',
-      type: '架构灵活性',
-      keys: ['Boot', 'Cloud'],
-      date: new Date()
-    },
-    {
-      title: '全部开源，个人与企业可 100% 直接使用，无需授权',
-      type: '开源免授权',
-      keys: ['无需授权'],
-      date: new Date()
-    },
-    {
-      title: '国内使用最广泛的快速开发平台，远超 10w+ 企业使用',
-      type: '广泛企业认可',
-      keys: ['最广泛', '10w+'],
-      date: new Date()
-    }
-  ]
-  notice = Object.assign(notice, data)
-}
+const warehouseAreas = [
+  { name: 'A 区 - 原料库', used: 856, total: 1200, percent: 71, status: undefined },
+  { name: 'B 区 - 成品库', used: 1048, total: 1300, percent: 81, status: 'warning' as const },
+  { name: 'C 区 - 备件库', used: 392, total: 900, percent: 44, status: 'success' as const },
+  { name: 'D 区 - 暂存区', used: 188, total: 260, percent: 72, status: undefined }
+]
 
-// 获取快捷入口
-let shortcut = reactive<Shortcut[]>([])
+const inventoryWarnings = [
+  {
+    title: '低库存预警',
+    count: 12,
+    desc: '安全库存不足，需要及时补货',
+    icon: 'ep:warning-filled',
+    color: 'text-[#e6a23c]',
+    type: 'warning' as const
+  },
+  {
+    title: '超储提醒',
+    count: 5,
+    desc: '部分库位容量接近上限',
+    icon: 'ep:circle-close-filled',
+    color: 'text-[#f56c6c]',
+    type: 'danger' as const
+  },
+  {
+    title: '临期物料',
+    count: 9,
+    desc: '建议优先安排先进先出',
+    icon: 'ep:timer',
+    color: 'text-[#409eff]',
+    type: 'primary' as const
+  },
+  {
+    title: '冻结库存',
+    count: 3,
+    desc: '质检或盘点锁定库存',
+    icon: 'ep:lock',
+    color: 'text-[#909399]',
+    type: 'info' as const
+  }
+]
 
-const getShortcut = async () => {
-  const data = [
-    {
-      name: '首页',
-      icon: 'ion:home-outline',
-      url: '/',
-      color: '#1fdaca'
-    },
-    {
-      name: '商城中心',
-      icon: 'ep:shop',
-      url: '/mall/home',
-      color: '#ff6b6b'
-    },
-    {
-      name: 'AI 大模型',
-      icon: 'tabler:ai',
-      url: '/ai/chat',
-      color: '#7c3aed'
-    },
-    {
-      name: 'ERP 系统',
-      icon: 'simple-icons:erpnext',
-      url: '/erp/home',
-      color: '#3fb27f'
-    },
-    {
-      name: 'CRM 系统',
-      icon: 'simple-icons:civicrm',
-      url: '/crm/backlog',
-      color: '#4daf1bc9'
-    },
-    {
-      name: 'IoT 物联网',
-      icon: 'fa-solid:hdd',
-      url: '/iot/home',
-      color: '#1a73e8'
-    }
-  ]
-  shortcut = Object.assign(shortcut, data)
-}
+const quickEntries = [
+  { name: '入库管理', icon: 'ep:download', color: 'text-[#409eff]' },
+  { name: '出库管理', icon: 'ep:upload', color: 'text-[#67c23a]' },
+  { name: '库存查询', icon: 'ep:search', color: 'text-[#e6a23c]' },
+  { name: '库位管理', icon: 'ep:map-location', color: 'text-[#f56c6c]' }
+]
 
-// 用户来源
-const getUserAccessSource = async () => {
-  const data = [
-    { value: 335, name: 'analysis.directAccess' },
-    { value: 310, name: 'analysis.mailMarketing' },
-    { value: 234, name: 'analysis.allianceAdvertising' },
-    { value: 135, name: 'analysis.videoAdvertising' },
-    { value: 1548, name: 'analysis.searchEngines' }
-  ]
-  set(
-    pieOptionsData,
-    'legend.data',
-    data.map((v) => t(v.name))
-  )
-  pieOptionsData!.series![0].data = data.map((v) => {
-    return {
-      name: t(v.name),
-      value: v.value
-    }
-  })
-}
-const barOptionsData = reactive<EChartsOption>(barOptions) as EChartsOption
-
-// 周活跃量
-const getWeeklyUserActivity = async () => {
-  const data = [
-    { value: 13253, name: 'analysis.monday' },
-    { value: 34235, name: 'analysis.tuesday' },
-    { value: 26321, name: 'analysis.wednesday' },
-    { value: 12340, name: 'analysis.thursday' },
-    { value: 24643, name: 'analysis.friday' },
-    { value: 1322, name: 'analysis.saturday' },
-    { value: 1324, name: 'analysis.sunday' }
-  ]
-  set(
-    barOptionsData,
-    'xAxis.data',
-    data.map((v) => t(v.name))
-  )
-  set(barOptionsData, 'series', [
-    {
-      name: t('analysis.activeQuantity'),
-      data: data.map((v) => v.value),
-      type: 'bar'
-    }
-  ])
-}
-
-const getAllApi = async () => {
-  await Promise.all([
-    getCount(),
-    getProject(),
-    getNotice(),
-    getShortcut(),
-    getUserAccessSource(),
-    getWeeklyUserActivity()
-  ])
-  loading.value = false
-}
-
-const handleProjectClick = (message: string) => {
-  window.open(`https://${message}`, '_blank')
-}
-
-const handleShortcutClick = (url: string) => {
-  router.push(url)
-}
-
-getAllApi()
+const deviceStatus = [
+  { name: '堆垛机', status: '在线', type: 'success' as const, dot: 'bg-[#67c23a]' },
+  { name: '输送线', status: '在线', type: 'success' as const, dot: 'bg-[#67c23a]' },
+  { name: 'AGV 小车', status: '忙碌', type: 'warning' as const, dot: 'bg-[#e6a23c]' },
+  { name: '扫码设备', status: '在线', type: 'success' as const, dot: 'bg-[#67c23a]' }
+]
 </script>
+
+<style lang="scss" scoped>
+.wms-home {
+  .task-card,
+  .quick-entry,
+  .warning-item {
+    border: 1px solid var(--el-border-color-lighter);
+    border-radius: 10px;
+    background: var(--el-bg-color);
+  }
+
+  .task-card {
+    padding: 16px;
+  }
+
+  .warning-item {
+    padding: 14px 0;
+    border-width: 0 0 1px;
+    border-radius: 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .quick-entry {
+    padding: 16px 8px;
+    text-align: center;
+    cursor: default;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--el-color-primary-light-5);
+      background: var(--el-color-primary-light-9);
+    }
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+}
+</style>

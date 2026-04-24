@@ -4437,7 +4437,6 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2, N'基础设施', N'', 1, 20, 0, N'/infra', N'ep:monitor', NULL, NULL, 0, N'1', N'1', N'1', N'admin', N'2021-01-05 17:03:48', N'1', N'2024-03-01 08:28:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5, N'OA 示例', N'', 1, 40, 1185, N'oa', N'fa:road', NULL, NULL, 0, N'1', N'1', N'1', N'admin', N'2021-09-20 16:26:19', N'1', N'2024-02-29 12:38:13', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (100, N'用户管理', N'system:user:list', 2, 1, 1, N'user', N'ep:avatar', N'system/user/index', N'SystemUser', 0, N'1', N'1', N'1', N'admin', N'2021-01-05 17:03:48', N'1', N'2025-03-15 21:30:41', N'0')
 GO
@@ -4659,35 +4658,20 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1109, N'短信日志导出', N'system:sms-log:export', 3, 5, 1107, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-04-11 08:37:05', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1117, N'支付管理', N'', 1, 30, 0, N'/pay', N'ep:money', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2021-12-25 16:43:41', N'1', N'2024-02-29 08:58:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1118, N'请假查询', N'', 2, 0, 5, N'leave', N'fa:leanpub', N'bpm/oa/leave/index', N'BpmOALeave', 0, N'1', N'1', N'1', N'', N'2021-09-20 08:51:03', N'1', N'2024-02-29 12:38:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1119, N'请假申请查询', N'bpm:oa-leave:query', 3, 1, 1118, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-09-20 08:51:03', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1120, N'请假申请创建', N'bpm:oa-leave:create', 3, 2, 1118, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-09-20 08:51:03', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1126, N'应用信息', N'', 2, 1, 1117, N'app', N'fa:apple', N'pay/app/index', N'PayApp', 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:30', N'1', N'2024-02-29 08:59:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1127, N'支付应用信息查询', N'pay:app:query', 3, 1, 1126, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:31', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1128, N'支付应用信息创建', N'pay:app:create', 3, 2, 1126, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:31', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1129, N'支付应用信息更新', N'pay:app:update', 3, 3, 1126, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:31', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1130, N'支付应用信息删除', N'pay:app:delete', 3, 4, 1126, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:31', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1132, N'秘钥解析', N'pay:channel:parsing', 3, 6, 1129, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2021-11-08 15:15:47', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1133, N'支付商户信息查询', N'pay:merchant:query', 3, 1, 1132, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:41', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1134, N'支付商户信息创建', N'pay:merchant:create', 3, 2, 1132, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:41', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1135, N'支付商户信息更新', N'pay:merchant:update', 3, 3, 1132, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:41', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1136, N'支付商户信息删除', N'pay:merchant:delete', 3, 4, 1132, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:41', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1137, N'支付商户信息导出', N'pay:merchant:export', 3, 5, 1132, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-11-10 01:13:41', N'', N'2022-04-20 17:03:10', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1138, N'租户列表', N'', 2, 0, 1224, N'list', N'ep:house', N'system/tenant/index', N'SystemTenant', 0, N'1', N'1', N'1', N'', N'2021-12-14 12:31:43', N'1', N'2024-02-29 01:01:10', N'0')
 GO
@@ -4701,83 +4685,44 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1143, N'租户导出', N'system:tenant:export', 3, 5, 1138, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-14 12:31:44', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1150, N'秘钥解析', N'', 3, 6, 1129, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2021-11-08 15:15:47', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1161, N'退款订单', N'', 2, 3, 1117, N'refund', N'fa:registered', N'pay/refund/index', N'PayRefund', 0, N'1', N'1', N'1', N'', N'2021-12-25 08:29:07', N'1', N'2024-02-29 08:59:20', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1162, N'退款订单查询', N'pay:refund:query', 3, 1, 1161, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-25 08:29:07', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1166, N'退款订单导出', N'pay:refund:export', 3, 5, 1161, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-25 08:29:07', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1173, N'支付订单', N'', 2, 2, 1117, N'order', N'fa:cc-paypal', N'pay/order/index', N'PayOrder', 0, N'1', N'1', N'1', N'', N'2021-12-25 08:49:43', N'1', N'2024-02-29 08:59:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1174, N'支付订单查询', N'pay:order:query', 3, 1, 1173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-25 08:49:43', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1178, N'支付订单导出', N'pay:order:export', 3, 5, 1173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-25 08:49:43', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1185, N'工作流程', N'', 1, 50, 0, N'/bpm', N'fa:medium', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2021-12-30 20:26:36', N'1', N'2024-02-29 12:43:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1186, N'流程管理', N'', 1, 10, 1185, N'manager', N'fa:dedent', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2021-12-30 20:28:30', N'1', N'2024-02-29 12:36:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1187, N'流程表单', N'', 2, 2, 1186, N'form', N'fa:hdd-o', N'bpm/form/index', N'BpmForm', 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2024-03-19 12:25:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1188, N'表单查询', N'bpm:form:query', 3, 1, 1187, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1189, N'表单创建', N'bpm:form:create', 3, 2, 1187, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1190, N'表单更新', N'bpm:form:update', 3, 3, 1187, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1191, N'表单删除', N'bpm:form:delete', 3, 4, 1187, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1192, N'表单导出', N'bpm:form:export', 3, 5, 1187, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2021-12-30 12:38:22', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1193, N'流程模型', N'', 2, 1, 1186, N'model', N'fa-solid:project-diagram', N'bpm/model/index', N'BpmModel', 0, N'1', N'1', N'1', N'1', N'2021-12-31 23:24:58', N'1', N'2024-03-19 12:25:19', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1194, N'模型查询', N'bpm:model:query', 3, 1, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-03 19:01:10', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1195, N'模型创建', N'bpm:model:create', 3, 2, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-03 19:01:24', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1197, N'模型更新', N'bpm:model:update', 3, 4, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-03 19:02:28', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1198, N'模型删除', N'bpm:model:delete', 3, 5, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-03 19:02:43', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1199, N'模型发布', N'bpm:model:deploy', 3, 6, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-03 19:03:24', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1200, N'审批中心', N'', 2, 20, 1185, N'task', N'fa:tasks', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-07 23:51:48', N'1', N'2024-03-21 00:33:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1201, N'我的流程', N'', 2, 1, 1200, N'my', N'fa-solid:book', N'bpm/processInstance/index', N'BpmProcessInstanceMy', 0, N'1', N'1', N'1', N'', N'2022-01-07 15:53:44', N'1', N'2024-03-21 23:52:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1202, N'流程实例的查询', N'bpm:process-instance:query', 3, 1, 1201, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-01-07 15:53:44', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1207, N'待办任务', N'', 2, 10, 1200, N'todo', N'fa:slack', N'bpm/task/todo/index', N'BpmTodoTask', 0, N'1', N'1', N'1', N'1', N'2022-01-08 10:33:37', N'1', N'2024-02-29 12:37:39', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1208, N'已办任务', N'', 2, 20, 1200, N'done', N'fa:delicious', N'bpm/task/done/index', N'BpmDoneTask', 0, N'1', N'1', N'1', N'1', N'2022-01-08 10:34:13', N'1', N'2024-02-29 12:37:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1209, N'用户分组', N'', 2, 4, 1186, N'user-group', N'fa:user-secret', N'bpm/group/index', N'BpmUserGroup', 0, N'1', N'1', N'1', N'', N'2022-01-14 02:14:20', N'1', N'2024-03-21 23:55:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1210, N'用户组查询', N'bpm:user-group:query', 3, 1, 1209, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-01-14 02:14:20', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1211, N'用户组创建', N'bpm:user-group:create', 3, 2, 1209, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-01-14 02:14:20', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1212, N'用户组更新', N'bpm:user-group:update', 3, 3, 1209, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-01-14 02:14:20', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1213, N'用户组删除', N'bpm:user-group:delete', 3, 4, 1209, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-01-14 02:14:20', N'', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1215, N'流程定义查询', N'bpm:process-definition:query', 3, 10, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:21:43', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1216, N'流程任务分配规则查询', N'bpm:task-assign-rule:query', 3, 20, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:26:53', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1217, N'流程任务分配规则创建', N'bpm:task-assign-rule:create', 3, 21, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:28:15', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1218, N'流程任务分配规则更新', N'bpm:task-assign-rule:update', 3, 22, 1193, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:28:41', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1219, N'流程实例的创建', N'bpm:process-instance:create', 3, 2, 1201, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:36:15', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1220, N'流程实例的取消', N'bpm:process-instance:cancel', 3, 3, 1201, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:36:33', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1221, N'流程任务的查询', N'bpm:task:query', 3, 1, 1207, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:38:52', N'1', N'2022-04-20 17:03:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1222, N'流程任务的更新', N'bpm:task:update', 3, 2, 1207, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-01-23 00:39:24', N'1', N'2022-04-20 17:03:10', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1224, N'租户管理', N'', 2, 0, 1, N'tenant', N'fa-solid:house-user', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2022-02-20 01:41:13', N'1', N'2024-02-29 00:59:29', N'0')
 GO
@@ -4805,7 +4750,6 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1243, N'文件管理', N'', 2, 6, 2, N'file', N'ep:files', NULL, N'', 0, N'1', N'1', N'1', N'1', N'2022-03-16 23:47:40', N'1', N'2024-04-23 00:02:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1254, N'作者动态', N'', 1, 0, 0, N'https://www.iocoder.cn', N'ep:avatar', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2022-04-23 01:03:15', N'1', N'2025-04-29 17:45:38', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1255, N'数据源配置', N'', 2, 1, 2, N'data-source-config', N'ep:data-analysis', N'infra/dataSourceConfig/index', N'InfraDataSourceConfig', 0, N'1', N'1', N'1', N'', N'2022-04-27 14:37:32', N'1', N'2024-02-29 08:51:25', N'0')
 GO
@@ -4835,223 +4779,115 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (1282, N'报表设计器', N'', 2, 1, 1281, N'jimu-report', N'ep:trend-charts', N'report/jmreport/index', N'JimuReport', 0, N'1', N'1', N'1', N'1', N'2022-07-10 20:26:36', N'1', N'2025-05-03 09:57:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2000, N'商品中心', N'', 1, 60, 2362, N'product', N'fa:product-hunt', NULL, NULL, 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'1', N'2023-09-30 11:52:36', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2002, N'商品分类', N'', 2, 2, 2000, N'category', N'ep:cellphone', N'mall/product/category/index', N'ProductCategory', 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'1', N'2023-08-21 10:27:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2003, N'分类查询', N'product:category:query', 3, 1, 2002, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'', N'2022-07-29 15:53:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2004, N'分类创建', N'product:category:create', 3, 2, 2002, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'', N'2022-07-29 15:53:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2005, N'分类更新', N'product:category:update', 3, 3, 2002, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'', N'2022-07-29 15:53:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2006, N'分类删除', N'product:category:delete', 3, 4, 2002, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-29 15:53:53', N'', N'2022-07-29 15:53:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2008, N'商品品牌', N'', 2, 3, 2000, N'brand', N'ep:chicken', N'mall/product/brand/index', N'ProductBrand', 0, N'1', N'1', N'1', N'', N'2022-07-30 13:52:44', N'1', N'2023-08-21 10:27:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2009, N'品牌查询', N'product:brand:query', 3, 1, 2008, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 13:52:44', N'', N'2022-07-30 13:52:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2010, N'品牌创建', N'product:brand:create', 3, 2, 2008, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 13:52:44', N'', N'2022-07-30 13:52:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2011, N'品牌更新', N'product:brand:update', 3, 3, 2008, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 13:52:44', N'', N'2022-07-30 13:52:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2012, N'品牌删除', N'product:brand:delete', 3, 4, 2008, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 13:52:44', N'', N'2022-07-30 13:52:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2014, N'商品列表', N'', 2, 1, 2000, N'spu', N'ep:apple', N'mall/product/spu/index', N'ProductSpu', 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'1', N'2023-08-21 10:27:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2015, N'商品查询', N'product:spu:query', 3, 1, 2014, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'', N'2022-07-30 14:22:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2016, N'商品创建', N'product:spu:create', 3, 2, 2014, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'', N'2022-07-30 14:22:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2017, N'商品更新', N'product:spu:update', 3, 3, 2014, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'', N'2022-07-30 14:22:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2018, N'商品删除', N'product:spu:delete', 3, 4, 2014, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'', N'2022-07-30 14:22:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2019, N'商品属性', N'', 2, 4, 2000, N'property', N'ep:cold-drink', N'mall/product/property/index', N'ProductProperty', 0, N'1', N'1', N'1', N'', N'2022-08-01 14:55:35', N'1', N'2023-08-26 11:01:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2020, N'规格查询', N'product:property:query', 3, 1, 2019, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-08-01 14:55:35', N'', N'2022-12-12 20:26:24', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2021, N'规格创建', N'product:property:create', 3, 2, 2019, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-08-01 14:55:35', N'', N'2022-12-12 20:26:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2022, N'规格更新', N'product:property:update', 3, 3, 2019, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-08-01 14:55:35', N'', N'2022-12-12 20:26:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2023, N'规格删除', N'product:property:delete', 3, 4, 2019, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-08-01 14:55:35', N'', N'2022-12-12 20:26:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2025, N'Banner', N'', 2, 100, 2387, N'banner', N'fa:bandcamp', N'mall/promotion/banner/index', NULL, 0, N'1', N'1', N'1', N'', N'2022-08-01 14:56:14', N'1', N'2023-10-24 20:20:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2026, N'Banner查询', N'promotion:banner:query', 3, 1, 2025, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-08-01 14:56:14', N'1', N'2023-10-24 20:20:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2027, N'Banner创建', N'promotion:banner:create', 3, 2, 2025, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-08-01 14:56:14', N'1', N'2023-10-24 20:20:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2028, N'Banner更新', N'promotion:banner:update', 3, 3, 2025, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-08-01 14:56:14', N'1', N'2023-10-24 20:20:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2029, N'Banner删除', N'promotion:banner:delete', 3, 4, 2025, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-08-01 14:56:14', N'1', N'2023-10-24 20:20:36', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2030, N'营销中心', N'', 1, 70, 2362, N'promotion', N'ep:present', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2022-10-31 21:25:09', N'1', N'2023-09-30 11:54:27', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2032, N'优惠劵列表', N'', 2, 1, 2365, N'template', N'ep:discount', N'mall/promotion/coupon/template/index', N'PromotionCouponTemplate', 0, N'1', N'1', N'1', N'', N'2022-10-31 22:27:14', N'1', N'2023-10-03 12:40:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2033, N'优惠劵模板查询', N'promotion:coupon-template:query', 3, 1, 2032, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-10-31 22:27:14', N'', N'2022-10-31 22:27:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2034, N'优惠劵模板创建', N'promotion:coupon-template:create', 3, 2, 2032, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-10-31 22:27:14', N'', N'2022-10-31 22:27:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2035, N'优惠劵模板更新', N'promotion:coupon-template:update', 3, 3, 2032, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-10-31 22:27:14', N'', N'2022-10-31 22:27:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2036, N'优惠劵模板删除', N'promotion:coupon-template:delete', 3, 4, 2032, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-10-31 22:27:14', N'', N'2022-10-31 22:27:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2038, N'领取记录', N'', 2, 2, 2365, N'list', N'ep:collection-tag', N'mall/promotion/coupon/index', N'PromotionCoupon', 0, N'1', N'1', N'1', N'', N'2022-11-03 23:21:31', N'1', N'2023-10-03 12:55:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2039, N'优惠劵查询', N'promotion:coupon:query', 3, 1, 2038, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-03 23:21:31', N'', N'2022-11-03 23:21:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2040, N'优惠劵删除', N'promotion:coupon:delete', 3, 4, 2038, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-03 23:21:31', N'', N'2022-11-03 23:21:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2041, N'满减送', N'', 2, 10, 2390, N'reward-activity', N'ep:goblet-square-full', N'mall/promotion/rewardActivity/index', N'PromotionRewardActivity', 0, N'1', N'1', N'1', N'', N'2022-11-04 23:47:49', N'1', N'2023-10-21 19:24:46', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2042, N'满减送活动查询', N'promotion:reward-activity:query', 3, 1, 2041, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-04 23:47:49', N'', N'2022-11-04 23:47:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2043, N'满减送活动创建', N'promotion:reward-activity:create', 3, 2, 2041, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-04 23:47:49', N'', N'2022-11-04 23:47:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2044, N'满减送活动更新', N'promotion:reward-activity:update', 3, 3, 2041, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-04 23:47:50', N'', N'2022-11-04 23:47:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2045, N'满减送活动删除', N'promotion:reward-activity:delete', 3, 4, 2041, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-04 23:47:50', N'', N'2022-11-04 23:47:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2046, N'满减送活动关闭', N'promotion:reward-activity:close', 3, 5, 2041, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2022-11-05 10:42:53', N'1', N'2022-11-05 10:42:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2047, N'限时折扣', N'', 2, 7, 2390, N'discount-activity', N'ep:timer', N'mall/promotion/discountActivity/index', N'PromotionDiscountActivity', 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:15', N'1', N'2023-10-21 19:24:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2048, N'限时折扣活动查询', N'promotion:discount-activity:query', 3, 1, 2047, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:15', N'', N'2022-11-05 17:12:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2049, N'限时折扣活动创建', N'promotion:discount-activity:create', 3, 2, 2047, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:15', N'', N'2022-11-05 17:12:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2050, N'限时折扣活动更新', N'promotion:discount-activity:update', 3, 3, 2047, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:16', N'', N'2022-11-05 17:12:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2051, N'限时折扣活动删除', N'promotion:discount-activity:delete', 3, 4, 2047, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:16', N'', N'2022-11-05 17:12:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2052, N'限时折扣活动关闭', N'promotion:discount-activity:close', 3, 5, 2047, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-05 17:12:16', N'', N'2022-11-05 17:12:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2059, N'秒杀商品', N'', 2, 2, 2209, N'activity', N'ep:basketball', N'mall/promotion/seckill/activity/index', N'PromotionSeckillActivity', 0, N'1', N'1', N'1', N'', N'2022-11-06 22:24:49', N'1', N'2023-06-24 18:57:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2060, N'秒杀活动查询', N'promotion:seckill-activity:query', 3, 1, 2059, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-06 22:24:49', N'', N'2022-11-06 22:24:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2061, N'秒杀活动创建', N'promotion:seckill-activity:create', 3, 2, 2059, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-06 22:24:49', N'', N'2022-11-06 22:24:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2062, N'秒杀活动更新', N'promotion:seckill-activity:update', 3, 3, 2059, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-06 22:24:49', N'', N'2022-11-06 22:24:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2063, N'秒杀活动删除', N'promotion:seckill-activity:delete', 3, 4, 2059, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-06 22:24:49', N'', N'2022-11-06 22:24:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2066, N'秒杀时段', N'', 2, 1, 2209, N'config', N'ep:baseball', N'mall/promotion/seckill/config/index', N'PromotionSeckillConfig', 0, N'1', N'1', N'1', N'', N'2022-11-15 19:46:50', N'1', N'2023-06-24 18:57:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2067, N'秒杀时段查询', N'promotion:seckill-config:query', 3, 1, 2066, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-11-15 19:46:51', N'1', N'2023-06-24 17:50:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2068, N'秒杀时段创建', N'promotion:seckill-config:create', 3, 2, 2066, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-11-15 19:46:51', N'1', N'2023-06-24 17:48:39', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2069, N'秒杀时段更新', N'promotion:seckill-config:update', 3, 3, 2066, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-11-15 19:46:51', N'1', N'2023-06-24 17:50:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2070, N'秒杀时段删除', N'promotion:seckill-config:delete', 3, 4, 2066, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2022-11-15 19:46:51', N'1', N'2023-06-24 17:50:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2072, N'订单中心', N'', 1, 65, 2362, N'trade', N'ep:eleme', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2022-11-19 18:57:19', N'1', N'2023-09-30 11:54:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2073, N'售后退款', N'', 2, 2, 2072, N'after-sale', N'ep:refrigerator', N'mall/trade/afterSale/index', N'TradeAfterSale', 0, N'1', N'1', N'1', N'', N'2022-11-19 20:15:32', N'1', N'2023-10-01 21:42:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2074, N'售后查询', N'trade:after-sale:query', 3, 1, 2073, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-11-19 20:15:33', N'1', N'2022-12-10 21:04:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2075, N'秒杀活动关闭', N'promotion:seckill-activity:close', 3, 5, 2059, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2022-11-28 20:20:15', N'1', N'2023-10-03 18:34:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2076, N'订单列表', N'', 2, 1, 2072, N'order', N'ep:list', N'mall/trade/order/index', N'TradeOrder', 0, N'1', N'1', N'1', N'1', N'2022-12-10 21:05:44', N'1', N'2023-10-01 21:42:08', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2083, N'地区管理', N'', 2, 14, 1, N'area', N'fa:map-marker', N'system/area/index', N'SystemArea', 0, N'1', N'1', N'1', N'1', N'2022-12-23 17:35:05', N'1', N'2024-02-29 08:50:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2084, N'公众号管理', N'', 1, 100, 0, N'/mp', N'ep:compass', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-01 20:11:04', N'1', N'2024-02-29 12:39:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2085, N'账号管理', N'', 2, 1, 2084, N'account', N'fa:user', N'mp/account/index', N'MpAccount', 0, N'1', N'1', N'1', N'1', N'2023-01-01 20:13:31', N'1', N'2024-02-29 12:42:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2086, N'新增账号', N'mp:account:create', 3, 1, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-01 20:21:40', N'1', N'2023-01-07 17:32:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2087, N'修改账号', N'mp:account:update', 3, 2, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-07 17:32:46', N'1', N'2023-01-07 17:32:46', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2088, N'查询账号', N'mp:account:query', 3, 0, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-07 17:33:07', N'1', N'2023-01-07 17:33:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2089, N'删除账号', N'mp:account:delete', 3, 3, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-07 17:33:21', N'1', N'2023-01-07 17:33:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2090, N'生成二维码', N'mp:account:qr-code', 3, 4, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-07 17:33:58', N'1', N'2023-01-07 17:33:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2091, N'清空 API 配额', N'mp:account:clear-quota', 3, 5, 2085, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-07 18:20:32', N'1', N'2023-01-07 18:20:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2092, N'数据统计', N'mp:statistics:query', 2, 2, 2084, N'statistics', N'ep:trend-charts', N'mp/statistics/index', N'MpStatistics', 0, N'1', N'1', N'1', N'1', N'2023-01-07 20:17:36', N'1', N'2024-02-29 12:42:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2093, N'标签管理', N'', 2, 3, 2084, N'tag', N'ep:collection-tag', N'mp/tag/index', N'MpTag', 0, N'1', N'1', N'1', N'1', N'2023-01-08 11:37:32', N'1', N'2024-02-29 12:42:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2094, N'查询标签', N'mp:tag:query', 3, 0, 2093, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 11:59:03', N'1', N'2023-01-08 11:59:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2095, N'新增标签', N'mp:tag:create', 3, 1, 2093, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 11:59:23', N'1', N'2023-01-08 11:59:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2096, N'修改标签', N'mp:tag:update', 3, 2, 2093, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 11:59:41', N'1', N'2023-01-08 11:59:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2097, N'删除标签', N'mp:tag:delete', 3, 3, 2093, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 12:00:04', N'1', N'2023-01-08 12:00:13', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2098, N'同步标签', N'mp:tag:sync', 3, 4, 2093, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 12:00:29', N'1', N'2023-01-08 12:00:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2099, N'粉丝管理', N'', 2, 4, 2084, N'user', N'fa:user-secret', N'mp/user/index', N'MpUser', 0, N'1', N'1', N'1', N'1', N'2023-01-08 16:51:20', N'1', N'2024-02-29 12:42:39', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2100, N'查询粉丝', N'mp:user:query', 3, 0, 2099, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 17:16:59', N'1', N'2023-01-08 17:17:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2101, N'修改粉丝', N'mp:user:update', 3, 1, 2099, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 17:17:11', N'1', N'2023-01-08 17:17:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2102, N'同步粉丝', N'mp:user:sync', 3, 2, 2099, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-08 17:17:40', N'1', N'2023-01-08 17:17:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2103, N'消息管理', N'', 2, 5, 2084, N'message', N'ep:message', N'mp/message/index', N'MpMessage', 0, N'1', N'1', N'1', N'1', N'2023-01-08 18:44:19', N'1', N'2024-02-29 12:42:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2104, N'图文发表记录', N'', 2, 10, 2084, N'free-publish', N'ep:edit-pen', N'mp/freePublish/index', N'MpFreePublish', 0, N'1', N'1', N'1', N'1', N'2023-01-13 00:30:50', N'1', N'2024-02-29 12:43:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2105, N'查询发布列表', N'mp:free-publish:query', 3, 1, 2104, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-13 07:19:17', N'1', N'2023-01-13 07:19:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2106, N'发布草稿', N'mp:free-publish:submit', 3, 2, 2104, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-13 07:19:46', N'1', N'2023-01-13 07:19:46', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2107, N'删除发布记录', N'mp:free-publish:delete', 3, 3, 2104, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-13 07:20:01', N'1', N'2023-01-13 07:20:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2108, N'图文草稿箱', N'', 2, 9, 2084, N'draft', N'ep:edit', N'mp/draft/index', N'MpDraft', 0, N'1', N'1', N'1', N'1', N'2023-01-13 07:40:21', N'1', N'2024-02-29 12:43:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2109, N'新建草稿', N'mp:draft:create', 3, 1, 2108, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-13 23:15:30', N'1', N'2023-01-13 23:15:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2110, N'修改草稿', N'mp:draft:update', 3, 2, 2108, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 10:08:47', N'1', N'2023-01-14 10:08:47', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2111, N'查询草稿', N'mp:draft:query', 3, 0, 2108, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 10:09:01', N'1', N'2023-01-14 10:09:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2112, N'删除草稿', N'mp:draft:delete', 3, 3, 2108, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 10:09:19', N'1', N'2023-01-14 10:09:19', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2113, N'素材管理', N'', 2, 8, 2084, N'material', N'ep:basketball', N'mp/material/index', N'MpMaterial', 0, N'1', N'1', N'1', N'1', N'2023-01-14 14:12:07', N'1', N'2024-02-29 12:43:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2114, N'上传临时素材', N'mp:material:upload-temporary', 3, 1, 2113, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 15:33:55', N'1', N'2023-01-14 15:33:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2115, N'上传永久素材', N'mp:material:upload-permanent', 3, 2, 2113, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 15:34:14', N'1', N'2023-01-14 15:34:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2116, N'删除素材', N'mp:material:delete', 3, 3, 2113, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 15:35:37', N'1', N'2023-01-14 15:35:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2117, N'上传图文图片', N'mp:material:upload-news-image', 3, 4, 2113, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 15:36:31', N'1', N'2023-01-14 15:36:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2118, N'查询素材', N'mp:material:query', 3, 5, 2113, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-14 15:39:22', N'1', N'2023-01-14 15:39:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2119, N'菜单管理', N'', 2, 6, 2084, N'menu', N'ep:menu', N'mp/menu/index', N'MpMenu', 0, N'1', N'1', N'1', N'1', N'2023-01-14 17:43:54', N'1', N'2025-04-01 20:21:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2120, N'自动回复', N'', 2, 7, 2084, N'auto-reply', N'fa-solid:republican', N'mp/autoReply/index', N'MpAutoReply', 0, N'1', N'1', N'1', N'1', N'2023-01-15 22:13:09', N'1', N'2024-02-29 12:43:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2121, N'查询回复', N'mp:auto-reply:query', 3, 0, 2120, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-16 22:28:41', N'1', N'2023-01-16 22:28:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2122, N'新增回复', N'mp:auto-reply:create', 3, 1, 2120, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-16 22:28:54', N'1', N'2023-01-16 22:28:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2123, N'修改回复', N'mp:auto-reply:update', 3, 2, 2120, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-16 22:29:05', N'1', N'2023-01-16 22:29:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2124, N'删除回复', N'mp:auto-reply:delete', 3, 3, 2120, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-16 22:29:34', N'1', N'2023-01-16 22:29:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2125, N'查询菜单', N'mp:menu:query', 3, 0, 2119, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-17 23:05:41', N'1', N'2023-01-17 23:05:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2126, N'保存菜单', N'mp:menu:save', 3, 1, 2119, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-17 23:06:01', N'1', N'2023-01-17 23:06:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2127, N'删除菜单', N'mp:menu:delete', 3, 2, 2119, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-17 23:06:16', N'1', N'2023-01-17 23:06:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2128, N'查询消息', N'mp:message:query', 3, 0, 2103, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-17 23:07:14', N'1', N'2023-01-17 23:07:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2129, N'发送消息', N'mp:message:send', 3, 1, 2103, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-17 23:07:26', N'1', N'2023-01-17 23:07:26', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2130, N'邮箱管理', N'', 2, 2, 2739, N'mail', N'fa-solid:mail-bulk', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2023-01-25 17:27:44', N'1', N'2024-04-22 23:56:08', N'0')
 GO
@@ -5111,369 +4947,187 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2158, N'使用 HTTP 查询数据', N'report:go-view-data:get-by-http', 3, 4, 2153, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'1', N'2023-02-07 19:26:35', N'1', N'2023-02-07 19:26:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2159, N'Boot 开发文档', N'', 1, 1, 0, N'https://doc.iocoder.cn/', N'ep:document', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2023-02-10 22:46:28', N'1', N'2024-07-28 11:36:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2160, N'Cloud 开发文档', N'', 1, 2, 0, N'https://cloud.iocoder.cn', N'ep:document-copy', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2023-02-10 22:47:07', N'1', N'2023-12-02 21:32:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2161, N'接入示例', N'', 1, 99, 1117, N'demo', N'fa-solid:dragon', N'pay/demo/index', NULL, 0, N'1', N'1', N'1', N'', N'2023-02-11 14:21:42', N'1', N'2024-01-18 23:50:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2162, N'商品导出', N'product:spu:export', 3, 5, 2014, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2022-07-30 14:22:58', N'', N'2022-07-30 14:22:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2164, N'配送管理', N'', 1, 3, 2072, N'delivery', N'ep:shopping-cart', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-05-18 09:18:02', N'1', N'2023-09-28 10:58:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2165, N'快递发货', N'', 1, 0, 2164, N'express', N'ep:bicycle', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-05-18 09:22:06', N'1', N'2023-08-30 21:02:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2166, N'门店自提', N'', 1, 1, 2164, N'pick-up-store', N'ep:add-location', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-05-18 09:23:14', N'1', N'2023-08-30 21:03:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2167, N'快递公司', N'', 2, 0, 2165, N'express', N'ep:compass', N'mall/trade/delivery/express/index', N'Express', 0, N'1', N'1', N'1', N'1', N'2023-05-18 09:27:21', N'1', N'2024-11-29 11:20:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2168, N'快递公司查询', N'trade:delivery:express:query', 3, 1, 2167, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-18 09:37:53', N'', N'2023-05-18 09:37:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2169, N'快递公司创建', N'trade:delivery:express:create', 3, 2, 2167, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-18 09:37:53', N'', N'2023-05-18 09:37:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2170, N'快递公司更新', N'trade:delivery:express:update', 3, 3, 2167, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-18 09:37:53', N'', N'2023-05-18 09:37:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2171, N'快递公司删除', N'trade:delivery:express:delete', 3, 4, 2167, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-18 09:37:53', N'', N'2023-05-18 09:37:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2172, N'快递公司导出', N'trade:delivery:express:export', 3, 5, 2167, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-18 09:37:53', N'', N'2023-05-18 09:37:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2173, N'运费模版', N'trade:delivery:express-template:query', 2, 1, 2165, N'express-template', N'ep:coordinate', N'mall/trade/delivery/expressTemplate/index', N'ExpressTemplate', 0, N'1', N'1', N'1', N'1', N'2023-05-20 06:48:10', N'1', N'2023-08-30 21:03:13', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2174, N'快递运费模板查询', N'trade:delivery:express-template:query', 3, 1, 2173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-20 06:49:53', N'', N'2023-05-20 06:49:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2175, N'快递运费模板创建', N'trade:delivery:express-template:create', 3, 2, 2173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-20 06:49:53', N'', N'2023-05-20 06:49:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2176, N'快递运费模板更新', N'trade:delivery:express-template:update', 3, 3, 2173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-20 06:49:53', N'', N'2023-05-20 06:49:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2177, N'快递运费模板删除', N'trade:delivery:express-template:delete', 3, 4, 2173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-20 06:49:53', N'', N'2023-05-20 06:49:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2178, N'快递运费模板导出', N'trade:delivery:express-template:export', 3, 5, 2173, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-20 06:49:53', N'', N'2023-05-20 06:49:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2179, N'门店管理', N'', 2, 1, 2166, N'pick-up-store', N'ep:basketball', N'mall/trade/delivery/pickUpStore/index', N'PickUpStore', 0, N'1', N'1', N'1', N'1', N'2023-05-25 10:50:00', N'1', N'2023-08-30 21:03:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2180, N'自提门店查询', N'trade:delivery:pick-up-store:query', 3, 1, 2179, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-25 10:53:29', N'', N'2023-05-25 10:53:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2181, N'自提门店创建', N'trade:delivery:pick-up-store:create', 3, 2, 2179, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-25 10:53:29', N'', N'2023-05-25 10:53:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2182, N'自提门店更新', N'trade:delivery:pick-up-store:update', 3, 3, 2179, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-25 10:53:29', N'', N'2023-05-25 10:53:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2183, N'自提门店删除', N'trade:delivery:pick-up-store:delete', 3, 4, 2179, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-25 10:53:29', N'', N'2023-05-25 10:53:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2184, N'自提门店导出', N'trade:delivery:pick-up-store:export', 3, 5, 2179, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-05-25 10:53:29', N'', N'2023-05-25 10:53:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2209, N'秒杀活动', N'', 2, 3, 2030, N'seckill', N'ep:place', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-06-24 17:39:13', N'1', N'2023-06-24 18:55:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2262, N'会员中心', N'', 1, 55, 0, N'/member', N'ep:bicycle', NULL, NULL, 0, N'1', N'1', N'1', N'1', N'2023-06-10 00:42:03', N'1', N'2023-08-20 09:23:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2275, N'会员配置', N'', 2, 0, 2262, N'config', N'fa:archive', N'member/config/index', N'MemberConfig', 0, N'1', N'1', N'1', N'', N'2023-06-10 02:07:44', N'1', N'2023-10-01 23:41:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2276, N'会员配置查询', N'member:config:query', 3, 1, 2275, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-06-10 02:07:44', N'1', N'2024-04-24 19:48:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2277, N'会员配置保存', N'member:config:save', 3, 2, 2275, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-06-10 02:07:44', N'1', N'2024-04-24 19:49:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2281, N'签到配置', N'', 2, 2, 2300, N'config', N'ep:calendar', N'member/signin/config/index', N'SignInConfig', 0, N'1', N'1', N'1', N'', N'2023-06-10 03:26:12', N'1', N'2023-08-20 19:25:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2282, N'积分签到规则查询', N'point:sign-in-config:query', 3, 1, 2281, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 03:26:12', N'', N'2023-06-10 03:26:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2283, N'积分签到规则创建', N'point:sign-in-config:create', 3, 2, 2281, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 03:26:12', N'', N'2023-06-10 03:26:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2284, N'积分签到规则更新', N'point:sign-in-config:update', 3, 3, 2281, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 03:26:12', N'', N'2023-06-10 03:26:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2285, N'积分签到规则删除', N'point:sign-in-config:delete', 3, 4, 2281, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 03:26:12', N'', N'2023-06-10 03:26:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2287, N'会员积分', N'', 2, 10, 2262, N'record', N'fa:asterisk', N'member/point/record/index', N'PointRecord', 0, N'1', N'1', N'1', N'', N'2023-06-10 04:18:50', N'1', N'2023-10-01 23:42:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2288, N'用户积分记录查询', N'point:record:query', 3, 1, 2287, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 04:18:50', N'', N'2023-06-10 04:18:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2293, N'签到记录', N'', 2, 3, 2300, N'record', N'ep:chicken', N'member/signin/record/index', N'SignInRecord', 0, N'1', N'1', N'1', N'', N'2023-06-10 04:48:22', N'1', N'2023-08-20 19:26:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2294, N'用户签到积分查询', N'point:sign-in-record:query', 3, 1, 2293, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 04:48:22', N'', N'2023-06-10 04:48:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2297, N'用户签到积分删除', N'point:sign-in-record:delete', 3, 4, 2293, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-06-10 04:48:22', N'', N'2023-06-10 04:48:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2300, N'会员签到', N'', 1, 11, 2262, N'signin', N'ep:alarm-clock', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-06-27 22:49:53', N'1', N'2023-08-20 09:23:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2301, N'回调通知', N'', 2, 5, 1117, N'notify', N'ep:mute-notification', N'pay/notify/index', N'PayNotify', 0, N'1', N'1', N'1', N'', N'2023-07-20 04:41:32', N'1', N'2024-01-18 23:56:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2302, N'支付通知查询', N'pay:notify:query', 3, 1, 2301, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-07-20 04:41:32', N'', N'2023-07-20 04:41:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2303, N'拼团活动', N'', 2, 3, 2030, N'combination', N'fa:group', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:19:54', N'1', N'2023-08-12 17:20:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2304, N'拼团商品', N'', 2, 1, 2303, N'acitivity', N'ep:apple', N'mall/promotion/combination/activity/index', N'PromotionCombinationActivity', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:22:03', N'1', N'2023-08-12 17:22:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2305, N'拼团活动查询', N'promotion:combination-activity:query', 3, 1, 2304, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:54:32', N'1', N'2023-11-24 11:57:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2306, N'拼团活动创建', N'promotion:combination-activity:create', 3, 2, 2304, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:54:49', N'1', N'2023-08-12 17:54:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2307, N'拼团活动更新', N'promotion:combination-activity:update', 3, 3, 2304, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:55:04', N'1', N'2023-08-12 17:55:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2308, N'拼团活动删除', N'promotion:combination-activity:delete', 3, 4, 2304, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:55:23', N'1', N'2023-08-12 17:55:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2309, N'拼团活动关闭', N'promotion:combination-activity:close', 3, 5, 2304, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-12 17:55:37', N'1', N'2023-10-06 10:51:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2310, N'砍价活动', N'', 2, 4, 2030, N'bargain', N'ep:box', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:27:25', N'1', N'2023-08-13 00:27:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2311, N'砍价商品', N'', 2, 1, 2310, N'activity', N'ep:burger', N'mall/promotion/bargain/activity/index', N'PromotionBargainActivity', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:28:49', N'1', N'2023-10-05 01:16:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2312, N'砍价活动查询', N'promotion:bargain-activity:query', 3, 1, 2311, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:32:30', N'1', N'2023-08-13 00:32:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2313, N'砍价活动创建', N'promotion:bargain-activity:create', 3, 2, 2311, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:32:44', N'1', N'2023-08-13 00:32:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2314, N'砍价活动更新', N'promotion:bargain-activity:update', 3, 3, 2311, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:32:55', N'1', N'2023-08-13 00:32:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2315, N'砍价活动删除', N'promotion:bargain-activity:delete', 3, 4, 2311, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:34:50', N'1', N'2023-08-13 00:34:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2316, N'砍价活动关闭', N'promotion:bargain-activity:close', 3, 5, 2311, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-13 00:35:02', N'1', N'2023-08-13 00:35:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2317, N'会员管理', N'', 2, 0, 2262, N'user', N'ep:avatar', N'member/user/index', N'MemberUser', 0, N'1', N'1', N'1', N'', N'2023-08-19 04:12:15', N'1', N'2023-08-24 00:50:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2318, N'会员用户查询', N'member:user:query', 3, 1, 2317, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-19 04:12:15', N'', N'2023-08-19 04:12:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2319, N'会员用户更新', N'member:user:update', 3, 3, 2317, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-19 04:12:15', N'', N'2023-08-19 04:12:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2320, N'会员标签', N'', 2, 1, 2262, N'tag', N'ep:collection-tag', N'member/tag/index', N'MemberTag', 0, N'1', N'1', N'1', N'', N'2023-08-20 01:03:08', N'1', N'2023-08-20 09:23:19', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2321, N'会员标签查询', N'member:tag:query', 3, 1, 2320, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-20 01:03:08', N'', N'2023-08-20 01:03:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2322, N'会员标签创建', N'member:tag:create', 3, 2, 2320, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-20 01:03:08', N'', N'2023-08-20 01:03:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2323, N'会员标签更新', N'member:tag:update', 3, 3, 2320, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-20 01:03:08', N'', N'2023-08-20 01:03:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2324, N'会员标签删除', N'member:tag:delete', 3, 4, 2320, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-20 01:03:08', N'', N'2023-08-20 01:03:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2325, N'会员等级', N'', 2, 2, 2262, N'level', N'fa:level-up', N'member/level/index', N'MemberLevel', 0, N'1', N'1', N'1', N'', N'2023-08-22 12:41:01', N'1', N'2023-08-22 21:47:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2326, N'会员等级查询', N'member:level:query', 3, 1, 2325, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 12:41:02', N'', N'2023-08-22 12:41:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2327, N'会员等级创建', N'member:level:create', 3, 2, 2325, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 12:41:02', N'', N'2023-08-22 12:41:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2328, N'会员等级更新', N'member:level:update', 3, 3, 2325, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 12:41:02', N'', N'2023-08-22 12:41:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2329, N'会员等级删除', N'member:level:delete', 3, 4, 2325, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 12:41:02', N'', N'2023-08-22 12:41:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2330, N'会员分组', N'', 2, 3, 2262, N'group', N'fa:group', N'member/group/index', N'MemberGroup', 0, N'1', N'1', N'1', N'', N'2023-08-22 13:50:06', N'1', N'2023-10-01 23:42:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2331, N'用户分组查询', N'member:group:query', 3, 1, 2330, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 13:50:06', N'', N'2023-08-22 13:50:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2332, N'用户分组创建', N'member:group:create', 3, 2, 2330, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 13:50:06', N'', N'2023-08-22 13:50:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2333, N'用户分组更新', N'member:group:update', 3, 3, 2330, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 13:50:06', N'', N'2023-08-22 13:50:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2334, N'用户分组删除', N'member:group:delete', 3, 4, 2330, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-22 13:50:06', N'', N'2023-08-22 13:50:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2335, N'用户等级修改', N'member:user:update-level', 3, 5, 2317, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-08-23 16:49:05', N'', N'2023-08-23 16:50:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2336, N'商品评论', N'', 2, 5, 2000, N'comment', N'ep:comment', N'mall/product/comment/index', N'ProductComment', 0, N'1', N'1', N'1', N'1', N'2023-08-26 11:03:00', N'1', N'2023-08-26 11:03:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2337, N'评论查询', N'product:comment:query', 3, 1, 2336, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-26 11:04:01', N'1', N'2023-08-26 11:04:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2338, N'添加自评', N'product:comment:create', 3, 2, 2336, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-26 11:04:23', N'1', N'2023-08-26 11:08:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2339, N'商家回复', N'product:comment:update', 3, 3, 2336, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-26 11:04:37', N'1', N'2023-08-26 11:04:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2340, N'显隐评论', N'product:comment:update', 3, 4, 2336, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-08-26 11:04:55', N'1', N'2023-08-26 11:04:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2341, N'优惠劵发送', N'promotion:coupon:send', 3, 2, 2038, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-09-02 00:03:14', N'1', N'2023-09-02 00:03:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2342, N'交易配置', N'', 2, 0, 2072, N'config', N'ep:setting', N'mall/trade/config/index', N'TradeConfig', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-02-26 20:30:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2343, N'交易中心配置查询', N'trade:config:query', 3, 1, 2342, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2344, N'交易中心配置保存', N'trade:config:save', 3, 2, 2342, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2345, N'分销管理', N'', 1, 4, 2072, N'brokerage', N'fa-solid:project-diagram', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2023-09-28 10:58:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2346, N'分销用户', N'', 2, 0, 2345, N'brokerage-user', N'fa-solid:user-tie', N'mall/trade/brokerage/user/index', N'TradeBrokerageUser', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-02-26 20:33:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2347, N'分销用户查询', N'trade:brokerage-user:query', 3, 1, 2346, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2348, N'分销用户推广人查询', N'trade:brokerage-user:user-query', 3, 2, 2346, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2349, N'分销用户推广订单查询', N'trade:brokerage-user:order-query', 3, 3, 2346, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2350, N'分销用户修改推广资格', N'trade:brokerage-user:update-brokerage-enable', 3, 4, 2346, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2351, N'修改推广员', N'trade:brokerage-user:update-bind-user', 3, 5, 2346, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-12-01 14:33:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2352, N'清除推广员', N'trade:brokerage-user:clear-bind-user', 3, 6, 2346, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-12-01 14:33:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2353, N'佣金记录', N'', 2, 1, 2345, N'brokerage-record', N'fa:money', N'mall/trade/brokerage/record/index', N'TradeBrokerageRecord', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-02-26 20:33:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2354, N'佣金记录查询', N'trade:brokerage-record:query', 3, 1, 2353, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2355, N'佣金提现', N'', 2, 2, 2345, N'brokerage-withdraw', N'fa:credit-card', N'mall/trade/brokerage/withdraw/index', N'TradeBrokerageWithdraw', 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'1', N'2024-02-26 20:33:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2356, N'佣金提现查询', N'trade:brokerage-withdraw:query', 3, 1, 2355, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2357, N'佣金提现审核', N'trade:brokerage-withdraw:audit', 3, 2, 2355, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-28 02:46:22', N'', N'2023-09-28 02:46:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2358, N'统计中心', N'', 1, 75, 2362, N'statistics', N'ep:data-line', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-09-30 03:22:40', N'1', N'2023-09-30 11:54:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2359, N'交易统计', N'', 2, 4, 2358, N'trade', N'fa-solid:credit-card', N'mall/statistics/trade/index', N'TradeStatistics', 0, N'1', N'1', N'1', N'', N'2023-09-30 03:22:40', N'1', N'2024-02-26 20:42:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2360, N'交易统计查询', N'statistics:trade:query', 3, 1, 2359, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-30 03:22:40', N'', N'2023-09-30 03:22:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2361, N'交易统计导出', N'statistics:trade:export', 3, 2, 2359, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-09-30 03:22:40', N'', N'2023-09-30 03:22:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2362, N'商城系统', N'', 1, 59, 0, N'/mall', N'ep:shop', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-09-30 11:52:02', N'1', N'2023-09-30 11:52:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2363, N'用户积分修改', N'member:user:update-point', 3, 6, 2317, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-01 14:39:43', N'', N'2023-10-01 14:39:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2364, N'用户余额修改', N'pay:wallet:update-balance', 3, 7, 2317, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-10-01 14:39:43', N'1', N'2024-10-01 09:42:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2365, N'优惠劵', N'', 1, 2, 2030, N'coupon', N'fa-solid:disease', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-03 12:39:15', N'1', N'2023-10-05 00:16:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2366, N'砍价记录', N'', 2, 2, 2310, N'record', N'ep:list', N'mall/promotion/bargain/record/index', N'PromotionBargainRecord', 0, N'1', N'1', N'1', N'', N'2023-10-05 02:49:06', N'1', N'2023-10-05 10:50:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2367, N'砍价记录查询', N'promotion:bargain-record:query', 3, 1, 2366, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-05 02:49:06', N'', N'2023-10-05 02:49:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2368, N'助力记录查询', N'promotion:bargain-help:query', 3, 2, 2366, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-05 12:27:49', N'1', N'2023-10-05 12:27:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2369, N'拼团记录', N'promotion:combination-record:query', 2, 2, 2303, N'record', N'ep:avatar', N'mall/promotion/combination/record/index.vue', N'PromotionCombinationRecord', 0, N'1', N'1', N'1', N'1', N'2023-10-08 07:10:22', N'1', N'2023-10-08 07:34:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2374, N'会员统计', N'', 2, 2, 2358, N'member', N'ep:avatar', N'mall/statistics/member/index', N'MemberStatistics', 0, N'1', N'1', N'1', N'', N'2023-10-11 04:39:24', N'1', N'2024-02-26 20:41:46', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2375, N'会员统计查询', N'statistics:member:query', 3, 1, 2374, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-11 04:39:24', N'', N'2023-10-11 04:39:24', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2376, N'订单核销', N'trade:order:pick-up', 3, 10, 2076, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-14 17:11:58', N'1', N'2023-10-14 17:11:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2377, N'文章分类', N'', 2, 0, 2387, N'article/category', N'fa:certificate', N'mall/promotion/article/category/index', N'ArticleCategory', 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'1', N'2023-10-16 09:38:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2378, N'分类查询', N'promotion:article-category:query', 3, 1, 2377, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2379, N'分类创建', N'promotion:article-category:create', 3, 2, 2377, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2380, N'分类更新', N'promotion:article-category:update', 3, 3, 2377, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2381, N'分类删除', N'promotion:article-category:delete', 3, 4, 2377, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2382, N'文章列表', N'', 2, 2, 2387, N'article', N'ep:connection', N'mall/promotion/article/index', N'Article', 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'1', N'2023-10-16 09:41:19', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2383, N'文章管理查询', N'promotion:article:query', 3, 1, 2382, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2384, N'文章管理创建', N'promotion:article:create', 3, 2, 2382, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2385, N'文章管理更新', N'promotion:article:update', 3, 3, 2382, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2386, N'文章管理删除', N'promotion:article:delete', 3, 4, 2382, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-16 01:26:18', N'', N'2023-10-16 01:26:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2387, N'内容管理', N'', 1, 1, 2030, N'content', N'ep:collection', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-16 09:37:31', N'1', N'2023-10-16 09:37:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2388, N'商城首页', N'', 2, 1, 2362, N'home', N'ep:home-filled', N'mall/home/index', N'MallHome', 0, N'1', N'1', N'1', N'', N'2023-10-16 12:10:33', N'', N'2023-10-16 12:10:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2389, N'核销订单', N'', 2, 2, 2166, N'pick-up-order', N'ep:list', N'mall/trade/delivery/pickUpOrder/index', N'PickUpOrder', 0, N'1', N'1', N'1', N'', N'2023-10-19 16:09:51', N'', N'2023-10-19 16:09:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2390, N'优惠活动', N'', 1, 99, 2030, N'youhui', N'ep:aim', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-21 19:23:49', N'1', N'2023-10-21 19:23:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2391, N'客户管理', N'', 2, 10, 2397, N'customer', N'fa:address-book-o', N'crm/customer/index', N'CrmCustomer', 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'1', N'2024-02-17 17:13:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2392, N'客户查询', N'crm:customer:query', 3, 1, 2391, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'', N'2023-10-29 09:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2393, N'客户创建', N'crm:customer:create', 3, 2, 2391, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'', N'2023-10-29 09:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2394, N'客户更新', N'crm:customer:update', 3, 3, 2391, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'', N'2023-10-29 09:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2395, N'客户删除', N'crm:customer:delete', 3, 4, 2391, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'', N'2023-10-29 09:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2396, N'客户导出', N'crm:customer:export', 3, 5, 2391, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 09:04:21', N'', N'2023-10-29 09:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2397, N'CRM 系统', N'', 1, 200, 0, N'/crm', N'simple-icons:civicrm', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-10-29 17:08:30', N'1', N'2025-04-19 18:56:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2398, N'合同管理', N'', 2, 50, 2397, N'contract', N'ep:notebook', N'crm/contract/index', N'CrmContract', 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'1', N'2024-02-17 17:15:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2399, N'合同查询', N'crm:contract:query', 3, 1, 2398, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'', N'2023-10-29 10:50:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2400, N'合同创建', N'crm:contract:create', 3, 2, 2398, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'', N'2023-10-29 10:50:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2401, N'合同更新', N'crm:contract:update', 3, 3, 2398, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'', N'2023-10-29 10:50:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2402, N'合同删除', N'crm:contract:delete', 3, 4, 2398, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'', N'2023-10-29 10:50:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2403, N'合同导出', N'crm:contract:export', 3, 5, 2398, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 10:50:41', N'', N'2023-10-29 10:50:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2404, N'线索管理', N'', 2, 8, 2397, N'clue', N'fa:pagelines', N'crm/clue/index', N'CrmClue', 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'1', N'2024-02-17 17:15:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2405, N'线索查询', N'crm:clue:query', 3, 1, 2404, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'', N'2023-10-29 11:06:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2406, N'线索创建', N'crm:clue:create', 3, 2, 2404, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'', N'2023-10-29 11:06:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2407, N'线索更新', N'crm:clue:update', 3, 3, 2404, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'', N'2023-10-29 11:06:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2408, N'线索删除', N'crm:clue:delete', 3, 4, 2404, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'', N'2023-10-29 11:06:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2409, N'线索导出', N'crm:clue:export', 3, 5, 2404, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:06:29', N'', N'2023-10-29 11:06:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2410, N'商机管理', N'', 2, 40, 2397, N'business', N'fa:bus', N'crm/business/index', N'CrmBusiness', 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'1', N'2024-02-17 17:14:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2411, N'商机查询', N'crm:business:query', 3, 1, 2410, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'', N'2023-10-29 11:12:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2412, N'商机创建', N'crm:business:create', 3, 2, 2410, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'', N'2023-10-29 11:12:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2413, N'商机更新', N'crm:business:update', 3, 3, 2410, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'', N'2023-10-29 11:12:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2414, N'商机删除', N'crm:business:delete', 3, 4, 2410, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'', N'2023-10-29 11:12:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2415, N'商机导出', N'crm:business:export', 3, 5, 2410, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:12:35', N'', N'2023-10-29 11:12:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2416, N'联系人管理', N'', 2, 20, 2397, N'contact', N'fa:address-book-o', N'crm/contact/index', N'CrmContact', 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'1', N'2024-02-17 17:13:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2417, N'联系人查询', N'crm:contact:query', 3, 1, 2416, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'', N'2023-10-29 11:14:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2418, N'联系人创建', N'crm:contact:create', 3, 2, 2416, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'', N'2023-10-29 11:14:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2419, N'联系人更新', N'crm:contact:update', 3, 3, 2416, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'', N'2023-10-29 11:14:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2420, N'联系人删除', N'crm:contact:delete', 3, 4, 2416, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'', N'2023-10-29 11:14:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2421, N'联系人导出', N'crm:contact:export', 3, 5, 2416, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:14:56', N'', N'2023-10-29 11:14:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2422, N'回款管理', N'', 2, 60, 2397, N'receivable', N'ep:money', N'crm/receivable/index', N'CrmReceivable', 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'1', N'2024-02-17 17:16:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2423, N'回款管理查询', N'crm:receivable:query', 3, 1, 2422, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2424, N'回款管理创建', N'crm:receivable:create', 3, 2, 2422, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2425, N'回款管理更新', N'crm:receivable:update', 3, 3, 2422, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2426, N'回款管理删除', N'crm:receivable:delete', 3, 4, 2422, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2427, N'回款管理导出', N'crm:receivable:export', 3, 5, 2422, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2428, N'回款计划', N'', 2, 61, 2397, N'receivable-plan', N'fa:money', N'crm/receivable/plan/index', N'CrmReceivablePlan', 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'1', N'2024-02-17 17:16:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2429, N'回款计划查询', N'crm:receivable-plan:query', 3, 1, 2428, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2430, N'回款计划创建', N'crm:receivable-plan:create', 3, 2, 2428, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2431, N'回款计划更新', N'crm:receivable-plan:update', 3, 3, 2428, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2432, N'回款计划删除', N'crm:receivable-plan:delete', 3, 4, 2428, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2433, N'回款计划导出', N'crm:receivable-plan:export', 3, 5, 2428, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 11:18:09', N'', N'2023-10-29 11:18:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2435, N'商城装修', N'', 2, 20, 2030, N'diy-template', N'fa6-solid:brush', N'mall/promotion/diy/template/index', N'', 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'1', N'2025-03-15 21:34:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2436, N'装修模板', N'', 2, 1, 2435, N'diy-template', N'fa6-solid:brush', N'mall/promotion/diy/template/index', N'DiyTemplate', 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2437, N'装修模板查询', N'promotion:diy-template:query', 3, 1, 2436, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2438, N'装修模板创建', N'promotion:diy-template:create', 3, 2, 2436, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2439, N'装修模板更新', N'promotion:diy-template:update', 3, 3, 2436, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2440, N'装修模板删除', N'promotion:diy-template:delete', 3, 4, 2436, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2441, N'装修模板使用', N'promotion:diy-template:use', 3, 5, 2436, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2442, N'装修页面', N'', 2, 2, 2435, N'diy-page', N'foundation:page-edit', N'mall/promotion/diy/page/index', N'DiyPage', 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2443, N'装修页面查询', N'promotion:diy-page:query', 3, 1, 2442, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:25', N'', N'2023-10-29 14:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2444, N'装修页面创建', N'promotion:diy-page:create', 3, 2, 2442, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:26', N'', N'2023-10-29 14:19:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2445, N'装修页面更新', N'promotion:diy-page:update', 3, 3, 2442, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:26', N'', N'2023-10-29 14:19:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2446, N'装修页面删除', N'promotion:diy-page:delete', 3, 4, 2442, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-10-29 14:19:26', N'', N'2023-10-29 14:19:26', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2447, N'三方登录', N'', 1, 10, 1, N'social', N'fa:rocket', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-11-04 12:12:01', N'1', N'2024-02-29 01:14:05', N'0')
 GO
@@ -5529,609 +5183,311 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2497, N'主子表（ERP）', N'', 2, 11, 1070, N'demo03-erp', N'ep:calendar', N'infra/demo/demo03/erp/index', N'Demo03StudentERP', 0, N'1', N'1', N'1', N'', N'2023-11-16 15:50:59', N'1', N'2023-11-17 13:19:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2516, N'客户公海配置', N'', 2, 0, 2524, N'customer-pool-config', N'ep:data-analysis', N'crm/customer/poolConfig/index', N'CrmCustomerPoolConfig', 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:31', N'1', N'2024-01-03 19:52:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2517, N'客户公海配置保存', N'crm:customer-pool-config:update', 3, 1, 2516, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:31', N'', N'2023-11-18 13:33:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2518, N'客户限制配置', N'', 2, 1, 2524, N'customer-limit-config', N'ep:avatar', N'crm/customer/limitConfig/index', N'CrmCustomerLimitConfig', 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'1', N'2024-02-24 16:43:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2519, N'客户限制配置查询', N'crm:customer-limit-config:query', 3, 1, 2518, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'', N'2023-11-18 13:33:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2520, N'客户限制配置创建', N'crm:customer-limit-config:create', 3, 2, 2518, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'', N'2023-11-18 13:33:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2521, N'客户限制配置更新', N'crm:customer-limit-config:update', 3, 3, 2518, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'', N'2023-11-18 13:33:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2522, N'客户限制配置删除', N'crm:customer-limit-config:delete', 3, 4, 2518, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'', N'2023-11-18 13:33:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2523, N'客户限制配置导出', N'crm:customer-limit-config:export', 3, 5, 2518, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-11-18 13:33:53', N'', N'2023-11-18 13:33:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2524, N'系统配置', N'', 1, 999, 2397, N'config', N'ep:connection', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-11-18 21:58:00', N'1', N'2024-02-17 17:14:34', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2525, N'WebSocket', N'', 2, 5, 2, N'websocket', N'ep:connection', N'infra/webSocket/index', N'InfraWebSocket', 0, N'1', N'1', N'1', N'1', N'2023-11-23 19:41:55', N'1', N'2024-04-23 00:02:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2526, N'产品管理', N'', 2, 80, 2397, N'product', N'fa:product-hunt', N'crm/product/index', N'CrmProduct', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:45:26', N'1', N'2024-02-20 20:36:20', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2527, N'产品查询', N'crm:product:query', 3, 1, 2526, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:47:16', N'1', N'2023-12-05 22:47:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2528, N'产品创建', N'crm:product:create', 3, 2, 2526, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:47:41', N'1', N'2023-12-05 22:47:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2529, N'产品更新', N'crm:product:update', 3, 3, 2526, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:48:03', N'1', N'2023-12-05 22:48:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2530, N'产品删除', N'crm:product:delete', 3, 4, 2526, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:48:17', N'1', N'2023-12-05 22:48:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2531, N'产品导出', N'crm:product:export', 3, 5, 2526, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-05 22:48:29', N'1', N'2023-12-05 22:48:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2532, N'产品分类配置', N'', 2, 3, 2524, N'product/category', N'fa-solid:window-restore', N'crm/product/category/index', N'CrmProductCategory', 0, N'1', N'1', N'1', N'1', N'2023-12-06 12:52:36', N'1', N'2023-12-06 12:52:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2533, N'产品分类查询', N'crm:product-category:query', 3, 1, 2532, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-06 12:53:23', N'1', N'2023-12-06 12:53:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2534, N'产品分类创建', N'crm:product-category:create', 3, 2, 2532, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-06 12:53:41', N'1', N'2023-12-06 12:53:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2535, N'产品分类更新', N'crm:product-category:update', 3, 3, 2532, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-06 12:53:59', N'1', N'2023-12-06 12:53:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2536, N'产品分类删除', N'crm:product-category:delete', 3, 4, 2532, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2023-12-06 12:54:14', N'1', N'2023-12-06 12:54:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2543, N'关联商机', N'crm:contact:create-business', 3, 10, 2416, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-02 17:28:25', N'1', N'2024-01-02 17:28:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2544, N'取关商机', N'crm:contact:delete-business', 3, 11, 2416, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-02 17:28:43', N'1', N'2024-01-02 17:28:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2545, N'商品统计', N'', 2, 3, 2358, N'product', N'fa:product-hunt', N'mall/statistics/product/index', N'ProductStatistics', 0, N'1', N'1', N'1', N'', N'2023-12-15 18:54:28', N'1', N'2024-02-26 20:41:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2546, N'客户公海', N'', 2, 30, 2397, N'customer/pool', N'fa-solid:swimming-pool', N'crm/customer/pool/index', N'CrmCustomerPool', 0, N'1', N'1', N'1', N'1', N'2024-01-15 21:29:34', N'1', N'2024-02-17 17:14:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2547, N'订单查询', N'trade:order:query', 3, 1, 2076, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-16 08:52:00', N'1', N'2024-01-16 08:52:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2548, N'订单更新', N'trade:order:update', 3, 2, 2076, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-16 08:52:21', N'1', N'2024-01-16 08:52:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2549, N'支付&退款案例', N'', 2, 1, 2161, N'order', N'fa:paypal', N'pay/demo/order/index', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-18 23:45:00', N'1', N'2024-01-18 23:47:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2550, N'提现转账案例', N'', 2, 2, 2161, N'transfer', N'fa:transgender-alt', N'pay/demo/withdraw/index', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-18 23:51:16', N'1', N'2025-05-08 13:04:36', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2551, N'钱包管理', N'', 1, 4, 1117, N'wallet', N'ep:wallet', N'', N'', 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'1', N'2024-02-29 08:58:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2552, N'充值套餐', N'', 2, 2, 2551, N'wallet-recharge-package', N'fa:leaf', N'pay/wallet/rechargePackage/index', N'WalletRechargePackage', 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2553, N'钱包充值套餐查询', N'pay:wallet-recharge-package:query', 3, 1, 2552, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2554, N'钱包充值套餐创建', N'pay:wallet-recharge-package:create', 3, 2, 2552, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2555, N'钱包充值套餐更新', N'pay:wallet-recharge-package:update', 3, 3, 2552, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2556, N'钱包充值套餐删除', N'pay:wallet-recharge-package:delete', 3, 4, 2552, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2557, N'钱包余额', N'', 2, 1, 2551, N'wallet-balance', N'fa:leaf', N'pay/wallet/balance/index', N'WalletBalance', 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2558, N'钱包余额查询', N'pay:wallet:query', 3, 1, 2557, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2559, N'转账订单', N'', 2, 3, 1117, N'transfer', N'ep:credit-card', N'pay/transfer/index', N'PayTransfer', 0, N'1', N'1', N'1', N'', N'2023-12-29 02:32:54', N'', N'2023-12-29 02:32:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2560, N'数据统计', N'', 1, 200, 2397, N'statistics', N'ep:data-line', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-01-26 22:50:35', N'1', N'2024-02-24 20:10:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2561, N'排行榜', N'crm:statistics-rank:query', 2, 1, 2560, N'ranking', N'fa:area-chart', N'crm/statistics/rank/index', N'CrmStatisticsRank', 0, N'1', N'1', N'1', N'1', N'2024-01-26 22:52:09', N'1', N'2024-04-24 19:39:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2562, N'客户导入', N'crm:customer:import', 3, 6, 2391, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-01 13:09:00', N'1', N'2024-02-01 13:09:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2563, N'ERP 系统', N'', 1, 300, 0, N'/erp', N'simple-icons:erpnext', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-04 15:37:25', N'1', N'2025-04-19 18:56:15', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2564, N'产品管理', N'', 1, 40, 2563, N'product', N'fa:product-hunt', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-04 15:38:43', N'1', N'2024-02-04 15:38:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2565, N'产品信息', N'', 2, 0, 2564, N'product', N'fa-solid:apple-alt', N'erp/product/product/index', N'ErpProduct', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-05 14:42:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2566, N'产品查询', N'erp:product:query', 3, 1, 2565, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-04 17:21:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2567, N'产品创建', N'erp:product:create', 3, 2, 2565, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-04 17:22:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2568, N'产品更新', N'erp:product:update', 3, 3, 2565, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-04 17:22:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2569, N'产品删除', N'erp:product:delete', 3, 4, 2565, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-04 17:22:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2570, N'产品导出', N'erp:product:export', 3, 5, 2565, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-02-04 07:52:15', N'1', N'2024-02-04 17:22:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2571, N'产品分类', N'', 2, 1, 2564, N'product-category', N'fa:certificate', N'erp/product/category/index', N'ErpProductCategory', 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'1', N'2024-02-04 17:24:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2572, N'分类查询', N'erp:product-category:query', 3, 1, 2571, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'', N'2024-02-04 09:21:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2573, N'分类创建', N'erp:product-category:create', 3, 2, 2571, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'', N'2024-02-04 09:21:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2574, N'分类更新', N'erp:product-category:update', 3, 3, 2571, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'', N'2024-02-04 09:21:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2575, N'分类删除', N'erp:product-category:delete', 3, 4, 2571, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'', N'2024-02-04 09:21:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2576, N'分类导出', N'erp:product-category:export', 3, 5, 2571, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 09:21:04', N'', N'2024-02-04 09:21:04', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2577, N'产品单位', N'', 2, 2, 2564, N'unit', N'ep:opportunity', N'erp/product/unit/index', N'ErpProductUnit', 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'1', N'2024-02-04 19:54:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2578, N'单位查询', N'erp:product-unit:query', 3, 1, 2577, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'', N'2024-02-04 11:54:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2579, N'单位创建', N'erp:product-unit:create', 3, 2, 2577, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'', N'2024-02-04 11:54:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2580, N'单位更新', N'erp:product-unit:update', 3, 3, 2577, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'', N'2024-02-04 11:54:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2581, N'单位删除', N'erp:product-unit:delete', 3, 4, 2577, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'', N'2024-02-04 11:54:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2582, N'单位导出', N'erp:product-unit:export', 3, 5, 2577, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 11:54:08', N'', N'2024-02-04 11:54:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2583, N'库存管理', N'', 1, 30, 2563, N'stock', N'fa:window-restore', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-05 00:29:37', N'1', N'2024-02-05 00:29:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2584, N'仓库信息', N'', 2, 0, 2583, N'warehouse', N'ep:house', N'erp/stock/warehouse/index', N'ErpWarehouse', 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'1', N'2024-02-05 01:12:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2585, N'仓库查询', N'erp:warehouse:query', 3, 1, 2584, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'', N'2024-02-04 17:12:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2586, N'仓库创建', N'erp:warehouse:create', 3, 2, 2584, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'', N'2024-02-04 17:12:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2587, N'仓库更新', N'erp:warehouse:update', 3, 3, 2584, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'', N'2024-02-04 17:12:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2588, N'仓库删除', N'erp:warehouse:delete', 3, 4, 2584, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'', N'2024-02-04 17:12:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2589, N'仓库导出', N'erp:warehouse:export', 3, 5, 2584, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-04 17:12:09', N'', N'2024-02-04 17:12:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2590, N'产品库存', N'', 2, 1, 2583, N'stock', N'ep:coffee', N'erp/stock/stock/index', N'ErpStock', 0, N'1', N'1', N'1', N'', N'2024-02-05 06:40:50', N'1', N'2024-02-05 14:42:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2591, N'库存查询', N'erp:stock:query', 3, 1, 2590, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 06:40:50', N'', N'2024-02-05 06:40:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2592, N'库存导出', N'erp:stock:export', 3, 5, 2590, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 06:40:50', N'', N'2024-02-05 06:40:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2593, N'出入库明细', N'', 2, 2, 2583, N'record', N'fa-solid:blog', N'erp/stock/record/index', N'ErpStockRecord', 0, N'1', N'1', N'1', N'', N'2024-02-05 10:27:21', N'1', N'2024-02-06 17:26:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2594, N'库存明细查询', N'erp:stock-record:query', 3, 1, 2593, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 10:27:21', N'', N'2024-02-05 10:27:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2595, N'库存明细导出', N'erp:stock-record:export', 3, 5, 2593, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 10:27:21', N'', N'2024-02-05 10:27:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2596, N'其它入库', N'', 2, 3, 2583, N'in', N'ep:zoom-in', N'erp/stock/in/index', N'ErpStockIn', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-07 19:06:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2597, N'其它入库单查询', N'erp:stock-in:query', 3, 1, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2598, N'其它入库单创建', N'erp:stock-in:create', 3, 2, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2599, N'其它入库单更新', N'erp:stock-in:update', 3, 3, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2600, N'其它入库单删除', N'erp:stock-in:delete', 3, 4, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2601, N'其它入库单导出', N'erp:stock-in:export', 3, 5, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2602, N'采购管理', N'', 1, 10, 2563, N'purchase', N'fa:buysellads', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-06 16:01:01', N'1', N'2024-02-06 16:01:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2603, N'供应商信息', N'', 2, 4, 2602, N'supplier', N'fa:superpowers', N'erp/purchase/supplier/index', N'ErpSupplier', 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'1', N'2024-02-06 16:22:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2604, N'供应商查询', N'erp:supplier:query', 3, 1, 2603, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'', N'2024-02-06 08:21:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2605, N'供应商创建', N'erp:supplier:create', 3, 2, 2603, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'', N'2024-02-06 08:21:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2606, N'供应商更新', N'erp:supplier:update', 3, 3, 2603, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'', N'2024-02-06 08:21:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2607, N'供应商删除', N'erp:supplier:delete', 3, 4, 2603, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'', N'2024-02-06 08:21:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2608, N'供应商导出', N'erp:supplier:export', 3, 5, 2603, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-06 08:21:55', N'', N'2024-02-06 08:21:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2609, N'其它入库单审批', N'erp:stock-in:update-status', 3, 6, 2596, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-05 16:08:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2610, N'其它出库', N'', 2, 4, 2583, N'out', N'ep:zoom-out', N'erp/stock/out/index', N'ErpStockOut', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-07 19:06:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2611, N'其它出库单查询', N'erp:stock-out:query', 3, 1, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:39', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2612, N'其它出库单创建', N'erp:stock-out:create', 3, 2, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:42', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2613, N'其它出库单更新', N'erp:stock-out:update', 3, 3, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2614, N'其它出库单删除', N'erp:stock-out:delete', 3, 4, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2615, N'其它出库单导出', N'erp:stock-out:export', 3, 5, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2616, N'其它出库单审批', N'erp:stock-out:update-status', 3, 6, 2610, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 06:43:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2617, N'销售管理', N'', 1, 20, 2563, N'sale', N'fa:sellsy', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-07 15:12:32', N'1', N'2024-02-07 15:12:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2618, N'客户信息', N'', 2, 4, 2617, N'customer', N'ep:avatar', N'erp/sale/customer/index', N'ErpCustomer', 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'1', N'2024-02-07 15:22:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2619, N'客户查询', N'erp:customer:query', 3, 1, 2618, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'', N'2024-02-07 07:21:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2620, N'客户创建', N'erp:customer:create', 3, 2, 2618, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'', N'2024-02-07 07:21:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2621, N'客户更新', N'erp:customer:update', 3, 3, 2618, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'', N'2024-02-07 07:21:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2622, N'客户删除', N'erp:customer:delete', 3, 4, 2618, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'', N'2024-02-07 07:21:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2623, N'客户导出', N'erp:customer:export', 3, 5, 2618, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-07 07:21:45', N'', N'2024-02-07 07:21:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2624, N'库存调拨', N'', 2, 5, 2583, N'move', N'ep:folder-remove', N'erp/stock/move/index', N'ErpStockMove', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-16 18:53:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2625, N'库存调度单查询', N'erp:stock-move:query', 3, 1, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2626, N'库存调度单创建', N'erp:stock-move:create', 3, 2, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2627, N'库存调度单更新', N'erp:stock-move:update', 3, 3, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2628, N'库存调度单删除', N'erp:stock-move:delete', 3, 4, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2629, N'库存调度单导出', N'erp:stock-move:export', 3, 5, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2630, N'库存调度单审批', N'erp:stock-move:update-status', 3, 6, 2624, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:13:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2631, N'库存盘点', N'', 2, 6, 2583, N'check', N'ep:circle-check-filled', N'erp/stock/check/index', N'ErpStockCheck', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-08 08:31:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2632, N'库存盘点单查询', N'erp:stock-check:query', 3, 1, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2633, N'库存盘点单创建', N'erp:stock-check:create', 3, 2, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2634, N'库存盘点单更新', N'erp:stock-check:update', 3, 3, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2635, N'库存盘点单删除', N'erp:stock-check:delete', 3, 4, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2636, N'库存盘点单导出', N'erp:stock-check:export', 3, 5, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2637, N'库存盘点单审批', N'erp:stock-check:update-status', 3, 6, 2631, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:13:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2638, N'销售订单', N'', 2, 1, 2617, N'order', N'fa:first-order', N'erp/sale/order/index', N'ErpSaleOrder', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-10 21:59:20', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2639, N'销售订单查询', N'erp:sale-order:query', 3, 1, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2640, N'销售订单创建', N'erp:sale-order:create', 3, 2, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2641, N'销售订单更新', N'erp:sale-order:update', 3, 3, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2642, N'销售订单删除', N'erp:sale-order:delete', 3, 4, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2643, N'销售订单导出', N'erp:sale-order:export', 3, 5, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2644, N'销售订单审批', N'erp:sale-order:update-status', 3, 6, 2638, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:13:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2645, N'财务管理', N'', 1, 50, 2563, N'finance', N'ep:money', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-10 08:05:58', N'1', N'2024-02-10 08:06:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2646, N'结算账户', N'', 2, 10, 2645, N'account', N'fa:universal-access', N'erp/finance/account/index', N'ErpAccount', 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'1', N'2024-02-14 08:24:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2647, N'结算账户查询', N'erp:account:query', 3, 1, 2646, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'', N'2024-02-10 00:15:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2648, N'结算账户创建', N'erp:account:create', 3, 2, 2646, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'', N'2024-02-10 00:15:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2649, N'结算账户更新', N'erp:account:update', 3, 3, 2646, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'', N'2024-02-10 00:15:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2650, N'结算账户删除', N'erp:account:delete', 3, 4, 2646, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'', N'2024-02-10 00:15:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2651, N'结算账户导出', N'erp:account:export', 3, 5, 2646, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-10 00:15:07', N'', N'2024-02-10 00:15:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2652, N'销售出库', N'', 2, 2, 2617, N'out', N'ep:sold-out', N'erp/sale/out/index', N'ErpSaleOut', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-10 22:02:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2653, N'销售出库查询', N'erp:sale-out:query', 3, 1, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2654, N'销售出库创建', N'erp:sale-out:create', 3, 2, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2655, N'销售出库更新', N'erp:sale-out:update', 3, 3, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2656, N'销售出库删除', N'erp:sale-out:delete', 3, 4, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2657, N'销售出库导出', N'erp:sale-out:export', 3, 5, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2658, N'销售出库审批', N'erp:sale-out:update-status', 3, 6, 2652, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:13:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2659, N'销售退货', N'', 2, 3, 2617, N'return', N'fa-solid:bone', N'erp/sale/return/index', N'ErpSaleReturn', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-12 06:12:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2660, N'销售退货查询', N'erp:sale-return:query', 3, 1, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2661, N'销售退货创建', N'erp:sale-return:create', 3, 2, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2662, N'销售退货更新', N'erp:sale-return:update', 3, 3, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:55', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2663, N'销售退货删除', N'erp:sale-return:delete', 3, 4, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2664, N'销售退货导出', N'erp:sale-return:export', 3, 5, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:12:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2665, N'销售退货审批', N'erp:sale-return:update-status', 3, 6, 2659, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-07 11:13:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2666, N'采购订单', N'', 2, 1, 2602, N'order', N'fa-solid:border-all', N'erp/purchase/order/index', N'ErpPurchaseOrder', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-12 08:51:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2667, N'采购订单查询', N'erp:purchase-order:query', 3, 1, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2668, N'采购订单创建', N'erp:purchase-order:create', 3, 2, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2669, N'采购订单更新', N'erp:purchase-order:update', 3, 3, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2670, N'采购订单删除', N'erp:purchase-order:delete', 3, 4, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2671, N'采购订单导出', N'erp:purchase-order:export', 3, 5, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2672, N'采购订单审批', N'erp:purchase-order:update-status', 3, 6, 2666, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2673, N'采购入库', N'', 2, 2, 2602, N'in', N'fa-solid:gopuram', N'erp/purchase/in/index', N'ErpPurchaseIn', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-12 11:19:27', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2674, N'采购入库查询', N'erp:purchase-in:query', 3, 1, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2675, N'采购入库创建', N'erp:purchase-in:create', 3, 2, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2676, N'采购入库更新', N'erp:purchase-in:update', 3, 3, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2677, N'采购入库删除', N'erp:purchase-in:delete', 3, 4, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2678, N'采购入库导出', N'erp:purchase-in:export', 3, 5, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2679, N'采购入库审批', N'erp:purchase-in:update-status', 3, 6, 2673, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2680, N'采购退货', N'', 2, 3, 2602, N'return', N'ep:minus', N'erp/purchase/return/index', N'ErpPurchaseReturn', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-12 20:51:02', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2681, N'采购退货查询', N'erp:purchase-return:query', 3, 1, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2682, N'采购退货创建', N'erp:purchase-return:create', 3, 2, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2683, N'采购退货更新', N'erp:purchase-return:update', 3, 3, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2684, N'采购退货删除', N'erp:purchase-return:delete', 3, 4, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2685, N'采购退货导出', N'erp:purchase-return:export', 3, 5, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2686, N'采购退货审批', N'erp:purchase-return:update-status', 3, 6, 2680, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2687, N'付款单', N'', 2, 1, 2645, N'payment', N'ep:caret-right', N'erp/finance/payment/index', N'ErpFinancePayment', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-14 08:24:23', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2688, N'付款单查询', N'erp:finance-payment:query', 3, 1, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2689, N'付款单创建', N'erp:finance-payment:create', 3, 2, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2690, N'付款单更新', N'erp:finance-payment:update', 3, 3, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2691, N'付款单删除', N'erp:finance-payment:delete', 3, 4, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2692, N'付款单导出', N'erp:finance-payment:export', 3, 5, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2693, N'付款单审批', N'erp:finance-payment:update-status', 3, 6, 2687, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2694, N'收款单', N'', 2, 2, 2645, N'receipt', N'ep:expand', N'erp/finance/receipt/index', N'ErpFinanceReceipt', 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'1', N'2024-02-15 19:35:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2695, N'收款单查询', N'erp:finance-receipt:query', 3, 1, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2696, N'收款单创建', N'erp:finance-receipt:create', 3, 2, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:54', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2697, N'收款单更新', N'erp:finance-receipt:update', 3, 3, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:44:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2698, N'收款单删除', N'erp:finance-receipt:delete', 3, 4, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:00', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2699, N'收款单导出', N'erp:finance-receipt:export', 3, 5, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2700, N'收款单审批', N'erp:finance-receipt:update-status', 3, 6, 2694, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-02-05 16:08:56', N'', N'2024-02-12 00:45:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2701, N'待办事项', N'', 2, 0, 2397, N'backlog', N'fa-solid:tasks', N'crm/backlog/index', N'CrmBacklog', 0, N'1', N'1', N'1', N'1', N'2024-02-17 17:17:11', N'1', N'2024-02-17 17:17:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2702, N'ERP 首页', N'erp:statistics:query', 2, 0, 2563, N'home', N'ep:home-filled', N'erp/home/index.vue', N'ErpHome', 0, N'1', N'1', N'1', N'1', N'2024-02-18 16:49:40', N'1', N'2024-02-26 21:12:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2703, N'商机状态配置', N'', 2, 4, 2524, N'business-status', N'fa-solid:charging-station', N'crm/business/status/index', N'CrmBusinessStatus', 0, N'1', N'1', N'1', N'1', N'2024-02-21 20:15:17', N'1', N'2024-02-21 20:15:17', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2704, N'商机状态查询', N'crm:business-status:query', 3, 1, 2703, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-21 20:35:36', N'1', N'2024-02-21 20:36:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2705, N'商机状态创建', N'crm:business-status:create', 3, 2, 2703, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-21 20:35:57', N'1', N'2024-02-21 20:35:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2706, N'商机状态更新', N'crm:business-status:update', 3, 3, 2703, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-21 20:36:21', N'1', N'2024-02-21 20:36:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2707, N'商机状态删除', N'crm:business-status:delete', 3, 4, 2703, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-21 20:36:36', N'1', N'2024-02-21 20:36:36', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2708, N'合同配置', N'', 2, 5, 2524, N'contract-config', N'ep:connection', N'crm/contract/config/index', N'CrmContractConfig', 0, N'1', N'1', N'1', N'1', N'2024-02-24 16:44:40', N'1', N'2024-02-24 16:44:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2709, N'客户公海配置查询', N'crm:customer-pool-config:query', 3, 2, 2516, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-24 16:45:19', N'1', N'2024-02-24 16:45:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2710, N'合同配置更新', N'crm:contract-config:update', 3, 1, 2708, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-24 16:45:56', N'1', N'2024-02-24 16:45:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2711, N'合同配置查询', N'crm:contract-config:query', 3, 2, 2708, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-02-24 16:46:16', N'1', N'2024-02-24 16:46:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2712, N'客户分析', N'crm:statistics-customer:query', 2, 0, 2560, N'customer', N'ep:avatar', N'crm/statistics/customer/index.vue', N'CrmStatisticsCustomer', 0, N'1', N'1', N'1', N'1', N'2024-03-09 16:43:56', N'1', N'2024-05-04 20:38:50', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2713, N'抄送我的', N'bpm:process-instance-cc:query', 2, 30, 1200, N'copy', N'ep:copy-document', N'bpm/task/copy/index', N'BpmProcessInstanceCopy', 0, N'1', N'1', N'1', N'1', N'2024-03-17 21:50:23', N'1', N'2024-04-24 19:55:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2714, N'流程分类', N'', 2, 3, 1186, N'category', N'fa:object-ungroup', N'bpm/category/index', N'BpmCategory', 0, N'1', N'1', N'1', N'', N'2024-03-08 02:00:51', N'1', N'2024-03-21 23:51:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2715, N'分类查询', N'bpm:category:query', 3, 1, 2714, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-03-08 02:00:51', N'1', N'2024-03-19 14:36:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2716, N'分类创建', N'bpm:category:create', 3, 2, 2714, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-03-08 02:00:51', N'1', N'2024-03-19 14:36:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2717, N'分类更新', N'bpm:category:update', 3, 3, 2714, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-03-08 02:00:51', N'1', N'2024-03-19 14:36:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2718, N'分类删除', N'bpm:category:delete', 3, 4, 2714, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-03-08 02:00:51', N'1', N'2024-03-19 14:36:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2720, N'发起流程', N'', 2, 0, 1200, N'create', N'fa-solid:grin-stars', N'bpm/processInstance/create/index', N'BpmProcessInstanceCreate', 0, N'1', N'0', N'1', N'1', N'2024-03-19 19:46:05', N'1', N'2024-03-23 19:03:42', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2721, N'流程实例', N'', 2, 10, 1186, N'process-instance/manager', N'fa:square', N'bpm/processInstance/manager/index', N'BpmProcessInstanceManager', 0, N'1', N'1', N'1', N'1', N'2024-03-21 23:57:30', N'1', N'2024-03-21 23:57:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2722, N'流程实例的查询（管理员）', N'bpm:process-instance:manager-query', 3, 1, 2721, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-03-22 08:18:27', N'1', N'2024-03-22 08:19:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2723, N'流程实例的取消（管理员）', N'bpm:process-instance:cancel-by-admin', 3, 2, 2721, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-03-22 08:19:25', N'1', N'2024-03-22 08:19:25', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2724, N'流程任务', N'', 2, 11, 1186, N'process-tasnk', N'ep:collection-tag', N'bpm/task/manager/index', N'BpmManagerTask', 0, N'1', N'1', N'1', N'1', N'2024-03-22 08:43:22', N'1', N'2024-03-22 08:43:27', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2725, N'流程任务的查询（管理员）', N'bpm:task:mananger-query', 3, 1, 2724, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-03-22 08:43:49', N'1', N'2024-03-22 08:43:49', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2726, N'流程监听器', N'', 2, 5, 1186, N'process-listener', N'fa:assistive-listening-systems', N'bpm/processListener/index', N'BpmProcessListener', 0, N'1', N'1', N'1', N'', N'2024-03-09 16:05:34', N'1', N'2024-03-23 13:13:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2727, N'流程监听器查询', N'bpm:process-listener:query', 3, 1, 2726, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 16:05:34', N'', N'2024-03-09 16:05:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2728, N'流程监听器创建', N'bpm:process-listener:create', 3, 2, 2726, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 16:05:34', N'', N'2024-03-09 16:05:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2729, N'流程监听器更新', N'bpm:process-listener:update', 3, 3, 2726, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 16:05:34', N'', N'2024-03-09 16:05:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2730, N'流程监听器删除', N'bpm:process-listener:delete', 3, 4, 2726, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 16:05:34', N'', N'2024-03-09 16:05:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2731, N'流程表达式', N'', 2, 6, 1186, N'process-expression', N'fa:wpexplorer', N'bpm/processExpression/index', N'BpmProcessExpression', 0, N'1', N'1', N'1', N'', N'2024-03-09 22:35:08', N'1', N'2024-03-23 19:43:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2732, N'流程表达式查询', N'bpm:process-expression:query', 3, 1, 2731, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 22:35:08', N'', N'2024-03-09 22:35:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2733, N'流程表达式创建', N'bpm:process-expression:create', 3, 2, 2731, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 22:35:08', N'', N'2024-03-09 22:35:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2734, N'流程表达式更新', N'bpm:process-expression:update', 3, 3, 2731, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 22:35:08', N'', N'2024-03-09 22:35:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2735, N'流程表达式删除', N'bpm:process-expression:delete', 3, 4, 2731, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-03-09 22:35:08', N'', N'2024-03-09 22:35:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2736, N'员工业绩', N'crm:statistics-performance:query', 2, 3, 2560, N'performance', N'ep:dish-dot', N'crm/statistics/performance/index', N'CrmStatisticsPerformance', 0, N'1', N'1', N'1', N'1', N'2024-04-05 13:49:20', N'1', N'2024-04-24 19:42:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2737, N'客户画像', N'crm:statistics-portrait:query', 2, 4, 2560, N'portrait', N'ep:picture', N'crm/statistics/portrait/index', N'CrmStatisticsPortrait', 0, N'1', N'1', N'1', N'1', N'2024-04-05 13:57:40', N'1', N'2024-04-24 19:42:24', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2738, N'销售漏斗', N'crm:statistics-funnel:query', 2, 5, 2560, N'funnel', N'ep:grape', N'crm/statistics/funnel/index', N'CrmStatisticsFunnel', 0, N'1', N'1', N'1', N'1', N'2024-04-13 10:53:26', N'1', N'2024-04-24 19:39:33', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2739, N'消息中心', N'', 1, 7, 1, N'messages', N'ep:chat-dot-round', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-22 23:54:30', N'1', N'2024-04-23 09:36:35', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2740, N'监控中心', N'', 1, 10, 2, N'monitors', N'ep:monitor', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-23 00:04:44', N'1', N'2024-04-23 00:04:44', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2741, N'领取公海客户', N'crm:customer:receive', 3, 1, 2546, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:47:45', N'1', N'2024-04-24 19:47:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2742, N'分配公海客户', N'crm:customer:distribute', 3, 2, 2546, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:48:05', N'1', N'2024-04-24 19:48:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2743, N'商品统计查询', N'statistics:product:query', 3, 1, 2545, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:50:05', N'1', N'2024-04-24 19:50:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2744, N'商品统计导出', N'statistics:product:export', 3, 2, 2545, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:50:26', N'1', N'2024-04-24 19:50:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2745, N'支付渠道查询', N'pay:channel:query', 3, 10, 1126, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:53:01', N'1', N'2024-04-24 19:53:01', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2746, N'支付渠道创建', N'pay:channel:create', 3, 11, 1126, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:53:18', N'1', N'2024-04-24 19:53:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2747, N'支付渠道更新', N'pay:channel:update', 3, 12, 1126, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:53:32', N'1', N'2024-04-24 19:53:58', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2748, N'支付渠道删除', N'pay:channel:delete', 3, 13, 1126, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:54:34', N'1', N'2024-04-24 19:54:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2749, N'商品收藏查询', N'product:favorite:query', 3, 10, 2014, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:55:47', N'1', N'2024-04-24 19:55:47', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2750, N'商品浏览查询', N'product:browse-history:query', 3, 20, 2014, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:57:43', N'1', N'2024-04-24 19:57:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2751, N'售后同意', N'trade:after-sale:agree', 3, 2, 2073, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:58:40', N'1', N'2024-04-24 19:58:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2752, N'售后不同意', N'trade:after-sale:disagree', 3, 3, 2073, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 19:59:03', N'1', N'2024-04-24 19:59:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2753, N'售后确认退货', N'trade:after-sale:receive', 3, 4, 2073, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 20:00:07', N'1', N'2024-04-24 20:00:07', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2754, N'售后确认退款', N'trade:after-sale:refund', 3, 5, 2073, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 20:00:24', N'1', N'2024-04-24 20:00:24', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2755, N'删除项目', N'report:go-view-project:delete', 3, 2, 2153, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 20:01:37', N'1', N'2024-04-24 20:01:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2756, N'会员等级记录查询', N'member:level-record:query', 3, 10, 2325, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 20:02:32', N'1', N'2024-04-24 20:02:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2757, N'会员经验记录查询', N'member:experience-record:query', 3, 11, 2325, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-04-24 20:02:51', N'1', N'2024-04-24 20:02:51', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2758, N'AI 大模型', N'', 1, 400, 0, N'/ai', N'tabler:ai', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-05-07 15:07:56', N'1', N'2025-04-19 18:57:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2759, N'AI 对话', N'', 2, 1, 2758, N'chat', N'ep:message', N'ai/chat/index/index.vue', N'AiChat', 0, N'1', N'1', N'1', N'1', N'2024-05-07 15:09:14', N'1', N'2024-07-07 17:15:36', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2760, N'控制台', N'', 1, 100, 2758, N'console', N'ep:setting', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-05-09 22:39:09', N'1', N'2024-05-24 23:34:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2761, N'API 密钥', N'', 2, 0, 2760, N'api-key', N'ep:key', N'ai/model/apiKey/index.vue', N'AiApiKey', 0, N'1', N'1', N'1', N'', N'2024-05-09 14:52:56', N'1', N'2024-05-10 22:44:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2762, N'API 密钥查询', N'ai:api-key:query', 3, 1, 2761, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-09 14:52:56', N'1', N'2024-05-13 20:36:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2763, N'API 密钥创建', N'ai:api-key:create', 3, 2, 2761, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-09 14:52:56', N'1', N'2024-05-13 20:36:26', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2764, N'API 密钥更新', N'ai:api-key:update', 3, 3, 2761, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-09 14:52:56', N'1', N'2024-05-13 20:36:42', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2765, N'API 密钥删除', N'ai:api-key:delete', 3, 4, 2761, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-09 14:52:56', N'1', N'2024-05-13 20:36:48', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2767, N'模型配置', N'', 2, 0, 2760, N'model', N'fa-solid:abacus', N'ai/model/model/index.vue', N'AiModel', 0, N'1', N'1', N'1', N'', N'2024-05-10 14:42:48', N'1', N'2025-03-03 09:57:41', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2768, N'聊天模型查询', N'ai:model:query', 3, 1, 2767, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-10 14:42:48', N'1', N'2025-03-03 09:19:46', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2769, N'聊天模型创建', N'ai:model:create', 3, 2, 2767, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-10 14:42:48', N'1', N'2025-03-03 09:20:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2770, N'聊天模型更新', N'ai:model:update', 3, 3, 2767, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-10 14:42:48', N'1', N'2025-03-03 09:20:14', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2771, N'聊天模型删除', N'ai:model:delete', 3, 4, 2767, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-10 14:42:48', N'1', N'2025-03-03 09:20:27', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2773, N'聊天角色', N'', 2, 0, 2760, N'chat-role', N'fa:user-secret', N'ai/model/chatRole/index.vue', N'AiChatRole', 0, N'1', N'1', N'1', N'', N'2024-05-13 12:39:28', N'1', N'2024-05-13 20:41:45', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2774, N'聊天角色查询', N'ai:chat-role:query', 3, 1, 2773, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-05-13 12:39:28', N'', N'2024-05-13 12:39:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2775, N'聊天角色创建', N'ai:chat-role:create', 3, 2, 2773, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-05-13 12:39:28', N'', N'2024-05-13 12:39:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2776, N'聊天角色更新', N'ai:chat-role:update', 3, 3, 2773, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-05-13 12:39:28', N'', N'2024-05-13 12:39:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2777, N'聊天角色删除', N'ai:chat-role:delete', 3, 4, 2773, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-05-13 21:43:38', N'1', N'2024-05-13 21:43:38', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2778, N'聊天管理', N'', 2, 10, 2760, N'chat-conversation', N'ep:chat-square', N'ai/chat/manager/index.vue', N'AiChatManager', 0, N'1', N'1', N'1', N'', N'2024-05-24 15:39:18', N'1', N'2024-06-26 21:36:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2779, N'会话查询', N'ai:chat-conversation:query', 3, 1, 2778, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-24 15:39:18', N'1', N'2024-05-25 08:38:30', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2780, N'会话删除', N'ai:chat-conversation:delete', 3, 2, 2778, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-05-24 15:39:18', N'1', N'2024-05-25 08:38:40', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2781, N'消息查询', N'ai:chat-message:query', 3, 11, 2778, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-05-25 08:38:56', N'1', N'2024-05-25 08:38:56', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2782, N'消息删除', N'ai:chat-message:delete', 3, 12, 2778, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-05-25 08:39:10', N'1', N'2024-05-25 08:39:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2783, N'AI 绘画', N'', 2, 2, 2758, N'image', N'ep:picture-rounded', N'ai/image/index/index.vue', N'AiImage', 0, N'1', N'1', N'1', N'1', N'2024-05-26 11:45:17', N'1', N'2024-07-07 17:18:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2784, N'绘画管理', N'', 2, 11, 2760, N'image', N'fa:file-image-o', N'ai/image/manager/index.vue', N'AiImageManager', 0, N'1', N'1', N'1', N'', N'2024-06-26 13:32:31', N'1', N'2024-06-26 21:37:13', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2785, N'绘画查询', N'ai:image:query', 3, 1, 2784, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-06-26 13:32:31', N'1', N'2024-06-26 22:21:57', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2786, N'绘画删除', N'ai:image:delete', 3, 4, 2784, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-06-26 13:32:31', N'1', N'2024-06-26 22:22:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2787, N'绘图更新', N'ai:image:update', 3, 2, 2784, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-06-26 22:47:56', N'1', N'2024-08-31 09:21:35', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2788, N'音乐管理', N'', 2, 12, 2760, N'music', N'fa:music', N'ai/music/manager/index.vue', N'AiMusicManager', 0, N'1', N'1', N'1', N'', N'2024-06-27 15:03:33', N'1', N'2024-06-27 23:04:19', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2789, N'音乐查询', N'ai:music:query', 3, 1, 2788, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-06-27 15:03:33', N'', N'2024-06-27 15:03:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2790, N'音乐更新', N'ai:music:update', 3, 3, 2788, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-06-27 15:03:33', N'', N'2024-06-27 15:03:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2791, N'音乐删除', N'ai:music:delete', 3, 4, 2788, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-06-27 15:03:33', N'', N'2024-06-27 15:03:33', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2792, N'AI 写作', N'', 2, 3, 2758, N'write', N'fa-solid:book-reader', N'ai/write/index/index.vue', N'AiWrite', 0, N'1', N'1', N'1', N'1', N'2024-07-08 09:26:44', N'1', N'2024-07-16 13:03:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2793, N'写作管理', N'', 2, 13, 2760, N'write', N'fa:bookmark-o', N'ai/write/manager/index.vue', N'AiWriteManager', 0, N'1', N'1', N'1', N'', N'2024-07-10 13:24:34', N'1', N'2024-07-10 21:31:59', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2794, N'AI 写作查询', N'ai:write:query', 3, 1, 2793, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-07-10 13:24:34', N'', N'2024-07-10 13:24:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2795, N'AI 写作删除', N'ai:write:delete', 3, 4, 2793, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-07-10 13:24:34', N'', N'2024-07-10 13:24:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2796, N'AI 音乐', N'', 2, 4, 2758, N'music', N'fa:music', N'ai/music/index/index.vue', N'AiMusic', 0, N'1', N'1', N'1', N'1', N'2024-07-17 09:21:12', N'1', N'2024-07-29 21:11:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2797, N'客服中心', N'', 2, 100, 2362, N'kefu', N'fa-solid:user-alt', N'mall/promotion/kefu/index', N'KeFu', 0, N'1', N'1', N'1', N'1', N'2024-07-17 23:49:05', N'1', N'2024-07-17 23:49:16', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2798, N'AI 思维导图', N'', 2, 6, 2758, N'mind-map', N'fa:sitemap', N'ai/mindmap/index/index.vue', N'AiMindMap', 0, N'1', N'1', N'1', N'1', N'2024-07-29 21:31:59', N'1', N'2025-03-02 18:57:31', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2799, N'导图管理', N'', 2, 14, 2760, N'mind-map', N'fa:map', N'ai/mindmap/manager/index', N'AiMindMapManager', 0, N'1', N'1', N'1', N'', N'2024-08-10 09:15:09', N'1', N'2024-08-10 17:24:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2800, N'思维导图查询', N'ai:mind-map:query', 3, 1, 2799, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-08-10 09:15:09', N'', N'2024-08-10 09:15:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2801, N'思维导图删除', N'ai:mind-map:delete', 3, 4, 2799, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2024-08-10 09:15:09', N'', N'2024-08-10 09:15:09', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2802, N'会话查询', N'promotion:kefu-conversation:query', 3, 1, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:17:52', N'1', N'2024-08-31 09:18:52', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2803, N'会话更新', N'promotion:kefu-conversation:update', 3, 2, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:18:15', N'1', N'2024-08-31 09:19:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2804, N'消息查询', N'promotion:kefu-message:query', 3, 10, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:18:42', N'1', N'2024-08-31 09:18:42', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2805, N'会话删除', N'promotion:kefu-conversation:delete', 3, 3, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:19:51', N'1', N'2024-08-31 09:20:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2806, N'消息发送', N'promotion:kefu-message:send', 3, 12, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:20:06', N'1', N'2024-08-31 09:20:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2807, N'消息更新', N'promotion:kefu-message:update', 3, 11, 2797, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-31 09:20:22', N'1', N'2024-08-31 09:20:22', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2808, N'积分商城', N'', 2, 5, 2030, N'point-activity', N'ep:bowl', N'mall/promotion/point/activity/index', N'PointActivity', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-23 09:14:43', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2809, N'积分商城活动查询', N'promotion:point-activity:query', 3, 1, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-22 14:49:05', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2810, N'积分商城活动创建', N'promotion:point-activity:create', 3, 2, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-22 14:49:08', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2811, N'积分商城活动更新', N'promotion:point-activity:update', 3, 3, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-22 14:49:10', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2812, N'积分商城活动删除', N'promotion:point-activity:delete', 3, 4, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-22 14:49:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2813, N'积分商城活动导出', N'promotion:point-activity:export', 3, 5, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'', N'2024-09-21 05:36:42', N'1', N'2024-09-22 14:49:27', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2912, N'创建推广员', N'trade:brokerage-user:create', 3, 7, 2346, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-12-01 14:32:39', N'1', N'2024-12-01 14:32:39', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2913, N'流程清理', N'bpm:model:clean', 3, 7, 1193, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-01-17 19:32:06', N'1', N'2025-01-17 19:32:06', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2914, N'积分商城活动关闭', N'promotion:point-activity:close', 3, 6, 2808, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-01-23 20:23:34', N'1', N'2025-01-23 20:23:34', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2915, N'AI 知识库', N'', 2, 5, 2758, N'knowledge', N'ep:notebook', N'ai/knowledge/knowledge/index', N'AiKnowledge', 0, N'1', N'1', N'1', N'', N'2025-02-28 07:04:21', N'1', N'2025-03-02 18:58:37', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2916, N'AI 知识库查询', N'ai:knowledge:query', 3, 1, 2915, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-02-28 07:04:21', N'', N'2025-02-28 07:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2917, N'AI 知识库创建', N'ai:knowledge:create', 3, 2, 2915, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-02-28 07:04:21', N'', N'2025-02-28 07:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2918, N'AI 知识库更新', N'ai:knowledge:update', 3, 3, 2915, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-02-28 07:04:21', N'', N'2025-02-28 07:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2919, N'AI 知识库删除', N'ai:knowledge:delete', 3, 4, 2915, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-02-28 07:04:21', N'', N'2025-02-28 07:04:21', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2920, N'工具管理', N'', 2, 0, 2760, N'tool', N'fa-solid:tools', N'ai/model/tool/index.vue', N'AiTool', 0, N'1', N'1', N'1', N'', N'2025-03-14 11:19:29', N'1', N'2025-03-14 19:20:18', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2921, N'工具查询', N'ai:tool:query', 3, 1, 2920, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-03-14 11:19:29', N'', N'2025-03-14 11:19:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2922, N'工具创建', N'ai:tool:create', 3, 2, 2920, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-03-14 11:19:29', N'', N'2025-03-14 11:19:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2923, N'工具更新', N'ai:tool:update', 3, 3, 2920, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-03-14 11:19:29', N'', N'2025-03-14 11:19:29', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (2924, N'工具删除', N'ai:tool:delete', 3, 4, 2920, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-03-14 11:19:29', N'', N'2025-03-14 11:19:29', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (4000, N'IoT 物联网', N'', 1, 500, 0, N'/iot', N'fa-solid:hdd', N'', N'', 0, N'1', N'1', N'1', N'1', N'2024-08-10 09:55:28', N'1', N'2024-12-07 15:58:34', N'0')
 GO
@@ -6235,25 +5591,17 @@ INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (4056, N'IoT 数据桥梁导出', N'iot:data-bridge:export', 3, 5, 4051, N'', N'', N'', NULL, 0, N'1', N'1', N'1', N'', N'2025-03-09 13:47:12', N'', N'2025-03-09 13:47:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5000, N'AI 工作流', N'', 2, 5, 2758, N'workflow', N'fa:hand-grab-o', N'ai/workflow/index.vue', N'AiWorkflow', 0, N'1', N'1', N'1', N'1', N'2025-03-25 09:50:27', N'1', N'2025-05-03 18:55:12', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5001, N'AI 工作流查询', N'ai:workflow:query', 3, 1, 5000, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-03-25 09:51:11', N'1', N'2025-03-25 09:51:11', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5002, N'AI 工作流创建', N'ai:workflow:create', 3, 2, 5000, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-03-25 09:51:28', N'1', N'2025-03-25 09:51:28', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5003, N'AI 工作流更新', N'ai:workflow:update', 3, 3, 5000, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-03-25 09:51:42', N'1', N'2025-03-25 09:51:42', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5004, N'AI 工作流删除', N'ai:workflow:delete', 3, 4, 5000, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-03-25 09:51:55', N'1', N'2025-03-25 09:52:03', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5005, N'AI 工作流测试', N'ai:workflow:test', 3, 5, 5000, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-03-30 10:29:41', N'1', N'2025-03-30 10:29:41', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5009, N'仪表盘设计器', N'', 2, 1, 1281, N'jimu-bi', N'fa:y-combinator', N'report/jmreport/bi', N'JimuBI', 0, N'1', N'1', N'1', N'1', N'2025-05-03 09:57:15', N'1', N'2025-05-03 10:02:05', N'0')
 GO
 INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5010, N'租户切换', N'system:tenant:visit', 3, 999, 1138, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-05-05 15:25:32', N'1', N'2025-05-05 15:25:32', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5011, N'转账订单查询', N'pay:transfer:query', 3, 1, 2559, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-05-08 12:46:53', N'1', N'2025-05-08 12:46:53', N'0')
 GO
-INSERT INTO system_menu (id, name, permission, type, sort, parent_id, path, icon, component, component_name, status, visible, keep_alive, always_show, creator, create_time, updater, update_time, deleted) VALUES (5012, N'转账订单导出', N'pay:transfer:export', 3, 2, 2559, N'', N'', N'', N'', 0, N'1', N'1', N'1', N'1', N'2025-05-10 17:00:28', N'1', N'2025-05-10 17:00:28', N'0')
 GO
 SET IDENTITY_INSERT system_menu OFF
 GO

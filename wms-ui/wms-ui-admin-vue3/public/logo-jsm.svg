@@ -1,0 +1,25 @@
+<svg width="520" height="150" viewBox="0 0 520 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="jsm-primary" x1="0" y1="75" x2="520" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08A3AA" />
+      <stop offset="1" stop-color="#0E8F9B" />
+    </linearGradient>
+    <linearGradient id="jsm-flow" x1="150" y1="112" x2="330" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7BE3E6" stop-opacity="0" />
+      <stop offset="0.45" stop-color="#7BE3E6" />
+      <stop offset="1" stop-color="#7BE3E6" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <path d="M0 108H67C86 108 99 95 99 76V0H143V78C143 123 114 150 68 150H0V108Z" fill="url(#jsm-primary)" />
+
+  <path d="M158 0H318V42H221C211 42 204 47 204 56C204 63 209 67 216 73L250 100C274 119 261 150 226 150H158V108H220C229 108 234 105 234 99C234 95 231 92 226 88L194 63C171 45 179 0 226 0H158Z" fill="url(#jsm-primary)" />
+  <path d="M157 77H244C254 77 263 85 263 96C263 107 254 115 244 115H164" stroke="white" stroke-width="20" stroke-linecap="round" />
+  <path d="M160 77H244C254 77 263 85 263 96C263 107 254 115 244 115H164" stroke="url(#jsm-flow)" stroke-width="7" stroke-linecap="round" />
+
+  <path d="M345 150L373 0H434L456 80L478 0H520L493 150H450L430 73L409 150H345Z" fill="url(#jsm-primary)" />
+
+  <rect x="177" y="117" width="24" height="18" rx="3" fill="#08A3AA" />
+  <rect x="206" y="117" width="24" height="18" rx="3" fill="#08A3AA" opacity="0.78" />
+  <rect x="235" y="117" width="24" height="18" rx="3" fill="#08A3AA" opacity="0.56" />
+</svg>
